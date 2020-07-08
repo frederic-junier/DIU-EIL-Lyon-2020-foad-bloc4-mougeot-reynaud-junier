@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>compte élève</title>
+		<!-- <link rel ="stylesheet" href ="mon.css"/>  -->
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface élève </h1>
+   
+
+        <section>
+            <h2>Formulaire de modification du compte {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+         
+		<form action="/modifierCompte" method="post">
+            <ul>
+                <li><label for='nom'>Nom : </label> <input type='text' id='nom' name='nom' value="{{session['user']['nom']}}"></li>
+                <li><label for='prenom'>Prénom : </label> <input type='text' id='prenom' name='prenom' value="{{session['user']['prenom']}}"></li>
+                <li><label for='login'>Login : </label> <input type='text' disabled value="{{session['user']['login']}}"></li>
+                <li><label for='anneeNaissance'>Année de naissance : </label> <input type=number id='anneeNaissance' name='anneeNaissance' min='2000' max='2004' value="{{session['user']['anneeNaissance']}}"></li>
+                <li><label for='password'>Password: </label> <input type=password id='password' name='password' value="{{session['user']['password']}}"></li>
+                <li><label for='note1'>Note 1: </label> <input type=number id='note1' name='note1'min='0' max='20' step='0.1' value="{{session['user']['note1']}}"></li>
+                <li><label for='note2'>Note 2: </label> <input type=number id='note2' name='note2'min='0' max='20' step='0.1' value="{{session['user']['note2']}}"></li>
+            </ul>
+                
+            <input type="submit" value="Valider"/>
+        </form>
+            </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Connexion </title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> Mon avenir : formulaire de connexion </h1>
+   
+    <form action="/connexion" method="POST">
+
+        <label for="profil">Profil : </label> 
+        <select id="profil" name="profil">
+            <option value="admin">admin</option>
+            <option value="superieur">établissement du supérieur</option>
+            <option value="lycee">lycée</option>
+            <option value="eleve">élève</option>
+        </select>
+        <br>
+        <label for="login">Identifiant : </label> 
+        <input type="text" id="login" name="login" required />
+        <br>
+        <label for="pwd">Mot de passe : </label> 
+        <input type="password" id="password" name="password" required />
+        <br>
+        <button type="submit">Envoyer</button>      
+    </form>
+    
+
+</body>
+</html> 

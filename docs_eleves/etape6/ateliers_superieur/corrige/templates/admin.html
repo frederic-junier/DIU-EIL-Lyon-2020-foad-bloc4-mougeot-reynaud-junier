@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Admin</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> interface admin </h1>
+   
+
+   <p>Bienvenue admin {{session['user']['nom']}}   sur la plateforme <em>Mon avenir</em>.  </p>
+
+
+   
+   <h2>Vos options </h2>
+
+   <ol>
+      <li> Avant la phase de réponses :
+        <ul>
+          <li> <a href="/statsEtabAvant">Formulaire pour générer des statistiques par établissement du supérieur. </a></li>
+          <li> <a href="/statsGeneralAvant">Formulaire pour générer des statistiques globales.</a> </li>
+        </ul>
+      </li>
+      
+      <li><a href="/classement"> Classer les candidatures pour chaque établissement et démarrer la phase de réponses.</a> </li>
+
+      <li> Pendant la phase de réponses :
+        <ul>
+          <li> <a href="/statsEtabApres">Formulaire pour générer des statistiques par établissement du supérieur.</a> </li>
+          <li> <a href="/statsGeneralApres">Formulaire pour générer des statistiques globales.</a> </li>
+        </ul>
+      </li>
+   </ol>
+   
+  
+    <footer>
+      <h2>Pied de page</h2>
+      <ul>
+          <li> <a href="/interface">Retour à l'interface du profil</a></li>
+          <li><a href="/deconnexion">Déconnexion</a></li>
+      </ul>   
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Incription MonAvenir</title>
+		<link rel ="stylesheet" href ="mon.css"/>
+	</head>
+	
+	<body>
+		<section>
+		<p>Bonjour {{prenom}} {{nom}}, vous êtes bien inscrit à l'école A.
+		<br/> 
+		Votre lycée est le {{lycee}}
+		<br/>
+		<br/>
+		Veuillez noter votre numéro d'inscription  ... 
+		</p>
+		<br/>
+		<p>Cliquer sur <a href="{{ url_for('validationCandidature') }}"> valider </a> pour valider définitivement ou <a href="{{ url_for('formulaireCandidature') }}">cliquer ici</a> pour revenir à la page formulaire</p>
+	</section>
+
+		<footer>
+			<a href="{{ url_for('accueil') }}">Retour à l'accueil</a>
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Supérieur</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> interface établissement du supérieur </h1>
+   
+
+   <p>Bienvenue établissement {{session['user']['nom']}}   sur la plateforme <em>Mon avenir</em>.  </p>
+
+   
+   <h2>Vos options </h2>
+
+    <ul>
+      <li>Modifier  les quotas en  nombre de candidats admis et  nombre de candidats appelés.</li>
+      <li>Afficher la liste des  candidatures avant la phase de réponse, classées selon différents critères (moyennes, lycée d'origine).</li>
+      <li> <a href="/appel">Afficher la liste des  candidatures (élève, lycée), dans l'ordre,  pendant la phase de réponse en choisissant leur statut (admis ou enAttente).</a></li>
+    </ul>
+
+  
+    <footer>
+      <h2>Pied de page</h2>
+      <ul>
+          <li> <a href="/interface">Retour à l'interface du profil</a></li>
+          <li><a href="/">Déconnexion</a></li>
+      </ul>   
+    </footer>
+</body>
+</html> 

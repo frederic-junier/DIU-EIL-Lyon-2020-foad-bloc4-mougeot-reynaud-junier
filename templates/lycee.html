@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Lycée</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> interface lycée </h1>
+   
+
+   
+   <p>Bienvenue établissement du secondaire {{session['user']['nom']}}   sur la plateforme <em>Mon avenir</em>.  </p>
+
+   
+   <h2>Vos options </h2>
+
+    <ul>
+      <li> Avant la phase de réponses :
+        <ul>
+          <li><a a href="/listeEleveEtab">Liste des élèves avec leur identifiant, leur moyenne et leur nombre de candidatures  
+            triée  par ordre décroissant des moyennes ou du nombre de candidatures.</a> </li>
+          <li><a href="/listeCandidatureEleveEtab">Afficher avant la phase de réponse la liste des  candidatures d'un élève,  groupée par type ou par statut.</a> </li>
+          <li><a href="/listeRefuse">Afficher pendant   la phase de réponse la liste des   candidats dont tous les voeux sont 'refuse'.</a> </li>       
+          <li>Afficher avant la phase de réponse le nombre moyen de candidature par élève. </li>
+          <li>Afficher avant la phase de réponse le nombre minimal et le nombre maximal de candidature par élève. </li>
+          <li>Afficher avant la phase de réponse la liste des élèves avec un nombre minimal/maximal de candidature </li>  
+        </ul>
+      </li>
+
+      <li> Pendant la phase de réponses :
+
+        <ul>
+            <li>Liste des réponses aux  candidatures de ses élèves  groupées par type. </li>
+
+        </ul>
+
+
+      </li>
+      
+   </ul>
+
+  
+    <footer>
+      <h2>Pied de page</h2>
+      <ul>
+          <li> <a href="/interface">Retour à l'interface du profil</a></li>
+          <li><a href="/deconnexion">Déconnexion</a></li>
+      </ul>   
+    </footer>
+</body>
+</html> 

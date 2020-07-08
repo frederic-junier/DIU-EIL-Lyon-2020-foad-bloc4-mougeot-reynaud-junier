@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>stats admin générales avant</title>
+        <link rel ="stylesheet" type="text/css" href ="{{ url_for('static', filename='stylesheets/style_monavenir.css') }}"/> 
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface admin </h1>
+   
+
+        <section>
+            <h2>Statistiques générales avant la phase de réponses,  admin {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+         
+
+            <ul>
+            {% if 'moyVoeux' in stats %}
+            <li><strong>Nombre moyen de voeux par   candidat : {{stats['moyVoeux']}}</strong> </li>
+            {% endif %}
+            {% if 'totalEtab' in stats %}
+            <li> <strong>Nombre de total de voeux  par établissement du supérieur :</strong>
+              <ul>
+              {% for etab in stats['totalEtab'] %}
+                <li>{{etab['nom']}} :  {{etab['nb']}} candidats.</li>
+              {% endfor %}
+            </ul>
+            </li>
+            {% endif %}
+            {% if 'sousAppel' in stats %}
+            <li> <strong> Liste des établissements avec moins de candidatures que leur quota d'appel :</strong>
+              <ul>
+              {% for etab in stats['sousAppel'] %}
+                <li>{{etab['nom']}} :  {{etab['nb']}} candidats et capacité d'appel : {{etab['nbAppel']}}.</li>
+              {% endfor %}
+            </ul>
+            </li>
+            {% endif %}
+            {% if 'moyEtab'  in stats %}
+            <li> <strong> Moyenne des candidats par établissment du supérieur :</strong>
+              <ul>
+              {% for etab in stats['moyEtab'] %}
+                <li>{{etab['nomEtab']}} : moyenne {{etab['moyEtab' ]}}.</li>
+              {% endfor %}
+            </ul>
+            </li>
+            {% endif %}
+            {% if 'maxCandid'  in stats %}
+            <li> <strong> Liste des établissements du supérieur avec le plus de candidats :</strong>
+              <ul>
+              {% for etab in stats['maxCandid'] %}
+                <li>{{etab['nom']}} :  {{etab['nb']}} candidats.</li>
+              {% endfor %}
+            </ul>
+            </li>
+            {% endif %}
+                 </ul>
+        </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li><a href="/deconnexion">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>compte élève</title>
+		<!-- <link rel ="stylesheet" href ="mon.css"/>  -->
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface élève </h1>
+   
+
+        <section>
+            <h2>Formulaire de modification du compte {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+         
+			<form action="/modifierCompte" method="post">
+            <ul>
+                <li><label for='nom'>Nom : </label> <input type='text' id='nom' name='nom' value="{{session['user']['nom']}}"></li>
+                <li><label for='prenom'>Prénom : </label> <input type='text' id='prenom' name='prenom' value="{{session['user']['prenom']}}"></li>
+                <!--   TO DO  : à compléter                     -->
+            </ul>
+                
+            <input type="submit" value="Valider"/>
+        </form>
+            </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

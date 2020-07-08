@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Liste des élèves</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> interface établissement</h1>
+   
+
+   <section>
+      
+   {% if 'moyenne' in dict(liste_eleve[0]) %}  
+   <!-- d'abord transformer liste_eleve[0] en un dictionnaire sinon le test d'appartenance n'est pas implémenté, c'est un objet SqliteRow -->
+   <h2> Liste des élèves de l'établissement du secondaire {{session['user']['nom']}} triée par ordre décroissant des moyennes.  </h2>
+    {% else %}
+    <h2> Liste des élèves de l'établissement  du secondaire {{session['user']['nom']}} triée par ordre décroissant du nombre de candidatures.  </h2>
+    {% endif %}
+
+
+    <ol>
+
+    {% for eleve in liste_eleve %}
+    <li> 
+        <ul>
+
+            <li> Nom : {{ eleve['nomEleve'] }} </li>
+            <li> Prénom :  {{ eleve['prenomEleve'] }}</li>
+            <li> Identifiant :  {{ eleve['idEleve'] }}</li>
+            {% if 'nbCandid' in dict(eleve) %}
+            <li>Nombre de candidatures : {{  eleve['nbCandid'] }}  </li>
+            {% else %}
+            <li>Établissement : {{  eleve['nomEtab'] }}  </li>
+            <li>Moyenne : {{  eleve['moyenne'] }}  </li>
+            {% endif %}
+
+        </ul>
+    </li>
+   {% endfor %}
+
+</ol>
+<section>
+  
+    <footer>
+        <h2>Pied de page</h2>
+        <ul>
+            <li> <a href="/interface">Retour à l'interface du profil</a></li>
+            <li> <a href="/listeCandidatureEleveEtab">Formulaire de sélection de la liste de candidatures d'un élève </a></li>   
+            <li><a href="/deconnexion">Déconnexion</a></li>
+        </ul>   
+      </footer>
+</body>
+</html> 

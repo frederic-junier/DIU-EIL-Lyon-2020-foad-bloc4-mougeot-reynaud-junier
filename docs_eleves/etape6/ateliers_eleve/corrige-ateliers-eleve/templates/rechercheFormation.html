@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Recherche de formation</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> interface de recherche </h1>
+   
+
+   
+   <h2>Formulaire de recherche d'établissement du supérieur </h2>
+
+   <form action="/resultatRecherche" method="POST">
+    
+    <label for="type">Type : </label> 
+    <br>
+    <select id="type" name="type">
+      <option value="indifferent">indifférent</option>
+        {% for type in list_type %}
+        <option value="{{type[0]}}">{{type[0]}}</option>
+        {% endfor %}
+    </select>
+
+     <br>
+
+
+     <label for="commune">Commune : </label> 
+     <br>
+    <select id="commune" name="commune">
+       <option value="indifferent">indifférent</option>
+        {% for commune in list_commune %}
+        <option value="{{commune[0]}}">{{commune[0]}}</option>
+        {% endfor %}
+    </select>
+
+     <br>
+
+     <button type="submit">Envoyer</button>      
+
+    </form>
+  
+    <footer>
+      <ul>
+          <li> <a href="/interface">Retour à l'interface du profil</a></li>
+          <li> <a href="/candidature">Gestion des candidatures</a></li>
+          <li><a href="/">Déconnexion</a></li>
+      </ul>   
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,182 @@
+idSuperieur;login;password;nom;type;commune;département;longitude (X);latitude (Y);nbAdmis;nbAppel;coefNote1;coefNote2
+1;inesbegue;nST!dA3x!4Qi;Institut des droits de l'Homme;Autre établissement du supérieur;Lyon;Rhône;4.8240999;45.7477113;100;200;7;2
+2;alexandreaugustin;7%#6L6Kv+I5Z;Institut de l'environnement et des technologies;Autre établissement du supérieur;Lyon;Rhône;4.805519;45.770445;100;200;5;0
+3;yantoine;hC6PBzP*!*BH;Ecole internationale des transports et de la logistique - Sup de Log (groupe Promotrans);Autre établissement du supérieur;Lyon;Rhône;4.835007;45.744212;100;200;3;2
+4;noel24;##s3i+IpBBLT;Institut national du travail, de l'emploi et de la formation professionnelle;Centre de formation de fonctionnaires;Marcy-l'Etoile;Rhône;4.715624;45.785551;100;200;5;1
+5;letelliermarine;Lty@LmxFc9IK;Institut national de formation des personnels du ministère de l'agriculture;Centre de formation de fonctionnaires;Corbas;Rhône;4.916536;45.674167;100;200;3;1
+6;zoe91;J#6@0UN&UkOE;Ecole du Personnel Paramédical du service de santé des Armées;Centre de formation de fonctionnaires;Bron;Rhône;4.9248669;45.7282743;100;200;1;2
+7;eleonorejacques;Jcsx@4GsqsdH;Conservatoire à rayonnement régional de Lyon;Ecole d'art;Lyon;Rhône;4.822114;45.76105;100;200;4;2
+8;schmittrene;2AtWiiNn_4@2;Centre de formation de musiciens intervenant à l'école;Ecole d'art;Bron;Rhône;4.824475;45.773776;100;200;3;1
+9;sophie26;_EQlo$Szj8bP;Institut supérieur Architecture intérieure;Ecole d'art;Lyon;Rhône;4.8657397822089;45.75680762735;100;200;7;2
+10;gabriellebrunet;MR#et9Kw)(5Q;IT Akademy;Autre établissement du supérieur;Villeurbanne;Rhône;4.8637927;45.7702825;100;200;2;1
+11;veronique46;Z1dB8MIx!ltl;Institut des sciences de la famille;Autre établissement du supérieur;Lyon;Rhône;4.8269411;45.751225;100;200;5;1
+12;georgesthierry;U3&6oQJnd$i7;Institut supérieur de communication et de publicité;Autre établissement du supérieur;Lyon;Rhône;4.862554;45.759085;100;200;4;0
+13;genevieveblin;@6vDcA7_%QCW;Institut d'études politiques (Sciences Po Lyon);Autre établissement du supérieur;Lyon;Rhône;4.836028;45.747026;100;200;3;1
+14;fernandezdiane;k)IvJHMt$B1c;Faculté de droit;Autre établissement du supérieur;Lyon;Rhône;4.826411;45.746622;100;200;3;1
+15;noemilagarde;R!4RdRB$K*TY;ISCPA Lyon - Institut supérieur des médias;Autre établissement du supérieur;Lyon;Rhône;4.805467;45.768032;100;200;4;0
+16;patrickleger;F9MmtF%q+oUi;Ecole supérieure qualité sécurité-santé environnement;Autre établissement du supérieur;Lyon;Rhône;4.826411;45.746622;100;200;5;0
+17;zacharieclerc;_5QWM$H2_*Ba;Médiat centre régional de formation aux métiers des bibliothèques;Autre établissement du supérieur;Villeurbanne;Rhône;4.871333;45.7822695;100;200;2;0
+18;valerie75;#cpX0QLMb3P3;École pour l'informatique et les nouvelles technologies;Autre établissement du supérieur;Lyon;Rhône;4.8568653;45.7569796;100;200;6;2
+19;agnesmartinez;!Q0OEeCoU3ZF;Institut de langue et culture françaises;Autre établissement du supérieur;Lyon;Rhône;4.8285338;45.7571036;100;200;7;1
+20;robertledoux;r#uWs%rq$45#;Ecole normale supérieure de Lyon;Centre de formation de fonctionnaires;Lyon;Rhône;4.8271601;45.7298101;100;200;1;2
+21;elodie76;B$I04Mcs0HZ+;ARFIS;Ecole d'art;Villeurbanne;Rhône;4.9004929;45.7594379;100;200;4;1
+22;vpinto;(0&8HkD!nj5R;Ecole EURIDIS;Autre établissement du supérieur;Lyon;Rhône;4.8420122312134;45.765293466612;100;200;7;1
+23;edithgerard;vd%PfBE4%0tr;Ecole nationale supérieure de police;Centre de formation de fonctionnaires;Saint-Cyr-au-Mont-d'Or;Rhône;4.813965;45.814646;100;200;2;1
+24;agosselin;_7Le*gtje7NF;ISEG - Digital Marketing and Communication School;Autre établissement du supérieur;Lyon;Rhône;4.834849;45.746098;100;200;5;0
+25;mbarbier;@8G*NCk!dYE1;Institut national des formations notariales;Autre établissement du supérieur;Lyon;Rhône;4.842057;45.747762;100;200;7;1
+26;amelie88;!4VbdQgELWdH;Faculté de philosophie et de sciences humaines;Autre établissement du supérieur;Lyon;Rhône;4.8269596;45.7514266;100;200;1;2
+27;eleonore87;)H_0oIwsXX8#;Cours Galien;Autre établissement du supérieur;Lyon;Rhône;4.8655824;45.7481997;100;200;3;2
+28;stephaniebaron;yG1BDU6u_7c2;VetAgro Sup - Campus vétérinaire de Lyon;Autre établissement du supérieur;Marcy-l'Etoile;Rhône;4.709203;45.790649;100;200;3;0
+29;xavier23;)VKNA8zENr5i;Carrel Ecole supérieure des métiers de la vente;Autre établissement du supérieur;Lyon;Rhône;4.8496046;45.7659591;100;200;3;1
+30;wmoreno;k3ZdGiv1%cyq;Ecole privée des sciences informatiques;Autre établissement du supérieur;Lyon;Rhône;4.8064926;45.7702159;100;200;7;0
+31;lenoircharles;myDs*um!(9Zg;Institut de science financière et d'assurances;Autre établissement du supérieur;Lyon;Rhône;4.827027;45.726554;100;200;1;2
+32;lucy41;44l6Dgf6+9Kl;L'école des nouveaux métiers de la communication;Autre établissement du supérieur;Lyon;Rhône;4.823592;45.779928;100;200;1;2
+33;zacharie82;fyXE@Vs1+9h_;Centre d'études pédagogiques pour l'expérimentation et le conseil;Autre établissement du supérieur;Craponne;Rhône;4.723658;45.749076;100;200;2;2
+34;rodriguesastrid;a868Oilxf(A&;ESTRI;Autre établissement du supérieur;Lyon;Rhône;4.8269411;45.751225;100;200;1;2
+35;reymarine;@i7f1Xiu!2H%;Institut régional d'administration;Centre de formation de fonctionnaires;Villeurbanne;Rhône;4.861253;45.775009;100;200;7;2
+36;apelletier;+WV@Z!f)L8wE;Centre de formation de la police nationale;Centre de formation de fonctionnaires;Chassieu;Rhône;4.949968;45.740683;100;200;5;1
+37;gillesfleury;HGklL(r_)86E;Ecole Emile Cohl;Ecole d'art;Lyon;Rhône;4.86579;45.75683;100;200;7;0
+38;bouchetmaurice;)d8J&Ghi2J5(;Institut supérieur transport et logistique internationale - AFTRAL;Autre établissement du supérieur;Jonage;Rhône;5.0368862;45.7739225;100;200;2;2
+39;michelle40;Ddpl80Cl#1fS;Foucauld Sup';Autre établissement du supérieur;Lyon;Rhône;4.8720217;45.750952809219;100;200;1;2
+40;susannelebon;)ToYcjofq9x7;Hybria - Institute of business & technologies;Autre établissement du supérieur;Ecully;Rhône;4.761832;45.782688;100;200;2;0
+41;pierrepasquier;*CX!Fj72f5vj;Ecole nationale supérieure des sciences de l'information et des bibliothèques;Centre de formation de fonctionnaires;Villeurbanne;Rhône;4.867089;45.778935;100;200;7;0
+42;jacqueline78;(2C09dQaN5b_;Institut de formation de la profession de l'assurance - ENASS;Autre établissement du supérieur;Lyon;Rhône;4.8262177;45.7262192;100;200;5;0
+43;moulinantoinette;H7%SsGlZ*MGE;Institut Bioforce;Autre établissement du supérieur;Vénissieux;Rhône;4.869838;45.692766;100;200;6;0
+44;stephaneroy;4#bDD7(0Fk28;Institut européen de formation au tourisme;Autre établissement du supérieur;Lyon;Rhône;4.805467;45.768032;100;200;1;1
+45;guilbertthibault;u^VyG_On)9Ho;Ecole de psychologues praticiens;Autre établissement du supérieur;Lyon;Rhône;4.843067;45.763196;100;200;3;0
+46;pierre17;4@0kDnsLqs^m;ADONIS;Autre établissement du supérieur;Lyon;Rhône;4.8685606;45.7618026;100;200;3;2
+47;delattresylvie;26Q99Xhf$n5v;Ecole de santé des armées;Centre de formation de fonctionnaires;Bron;Rhône;4.9248669;45.7282743;100;200;1;1
+48;leonsimon;636ZMr$Ft(fv;Faculté de lettres et langues;Autre établissement du supérieur;Lyon;Rhône;4.8269596;45.7514266;100;200;1;1
+49;prossi;^^a^ppSg92g1;Institut supérieur de formation de l'enseignement catholique - Campus de l'Oratoire;Autre établissement du supérieur;Caluire-et-Cuire;Rhône;4.841716;45.783742;100;200;1;1
+50;tristandufour;$3VOKg5$)6p&;Ecole des avocats de la région Rhône-Alpes;Autre établissement du supérieur;Lyon;Rhône;4.861029;45.773055;100;200;1;0
+51;aimeealves;WcC!Sb4bkBg9;AFIP;Autre établissement du supérieur;Villeurbanne;Rhône;4.8902912999999;45.7604537;100;200;7;0
+52;christianeloiseau;3@X@6XUu3rD$;Faculté de théologie;Autre établissement du supérieur;Lyon;Rhône;4.8269596;45.7514266;100;200;4;1
+53;fischermarthe;2S%LwAkrf!W4;Cours Diderot;Autre établissement du supérieur;Lyon;Rhône;4.8418361;45.7484824;100;200;3;1
+54;josephribeiro;*8Idhl+ae5^V;Ecole nationale supérieure des arts et techniques du théâtre;Ecole d'art;Lyon;Rhône;4.811379;45.751042;100;200;5;2
+55;scoulon;+N38NPYbl+#_;Made In Sainte-Marie Lyon;Autre établissement du supérieur;Lyon;Rhône;4.8200703;45.7650138;100;200;1;1
+56;smarie;07AXhzyr%JOf;École polytechnique universitaire de l'Université Lyon-I;Ecole d'ingénieurs;Villeurbanne;Rhône;4.8666;45.779406;100;200;7;2
+57;lagardealexandrie;k@bEn1&vGO4u;SUP'de Com école supérieure de communication;Autre établissement du supérieur;Lyon;Rhône;4.8055186;45.7704448;100;200;6;0
+58;denise88;DjU+tL0j!4Pl;UCPA L'école des Dj's;Ecole d'art;Lyon;Rhône;4.850209;45.740297;100;200;1;0
+59;benoitlaurent;g7NDvgXk_vx%;E-artsup Lyon;Ecole d'art;Lyon;Rhône;4.834849;45.746098;100;200;6;0
+60;augustemary;N(*V0Auk+UGz;ISARA;Ecole d'ingénieurs;Lyon;Rhône;4.835837;45.727813;100;200;3;0
+61;vbreton;Raz@fvmjWD2F;Scène formations;Ecole d'art;Villeurbanne;Rhône;4.871455;45.766575;100;200;4;0
+62;davidbesson;(74r8PqXwXK7;Conservatoire national supérieur musique et danse de Lyon;Ecole d'art;Lyon;Rhône;4.81272;45.768898;100;200;6;1
+63;pvalentin;^mh89HLk$DdT;Ecole Brassart Lyon;Ecole d'art;Lyon;Rhône;4.842826;45.725886;100;200;2;1
+64;ple-roux;r+EMz4dzdBrk;Classe préparatoire de l'ENSBA-Lyon;Ecole d'art;Lyon;Rhône;4.8276609;45.7638924;100;200;3;1
+65;valettehenriette;&4WCQRKP!@p);ITECH Lyon;Ecole d'ingénieurs;Ecully;Rhône;4.771212;45.785;100;200;5;0
+66;paulettelegros;@nOrtTIja9A0;Institut de formation aux affaires et à la gestion;Ecole de gestion et de commerce;Lyon;Rhône;4.805467;45.768032;100;200;3;1
+67;inesdenis;%lL7zKLy!AV(;Ecole supérieure des métiers des agences d'emploi (ESMAE) - EKLYA school of business;Ecole de gestion et de commerce;Ecully;Rhône;4.805468;45.771536;100;200;1;2
+68;uramos;*IH4rF)jU6Yi;Institut supérieur européen de formation par l'action;Autre établissement du supérieur;Lyon;Rhône;4.8560804;45.749074;100;200;4;2
+69;christiane87;&3cr7GcX@loj;ESIMA Lyon;Autre établissement du supérieur;Lyon;Rhône;4.8477196741703;45.752986801944;100;200;7;1
+70;alice46;)3@&jNj4Hqms;Ecole nationale supérieure d'architecture de Lyon;Ecole d'art;Vaulx-en-Velin;Rhône;4.922196;45.779035;100;200;7;1
+71;mmuller;^S1RMapep4%6;Ecole de management - ESDES;Ecole de gestion et de commerce;Lyon;Rhône;4.826411;45.746622;100;200;4;1
+72;remy26;q_(z1IhX6rUh;Vatel;Ecole de gestion et de commerce;Lyon;Rhône;4.829406;45.75031;100;200;7;0
+73;adrien22;Tu0W7@5z(+vn;Institut de gestion sociale - Ecole des ressources humaines;Ecole de gestion et de commerce;Lyon;Rhône;4.805467;45.768032;100;200;4;1
+74;emmanuelleclement;@0W@7*)rgf*O;Centre de formation des enseignants de la musique;Ecole d'art;Lyon;Rhône;4.835223;45.762701;100;200;1;2
+75;anastasiedevaux;$)2gFQeK&qoa;Ecole de Condé;Ecole d'art;Lyon;Rhône;4.8473496;45.7452888;100;200;6;2
+76;da-silvapauline;m*3HDGm^%r7Y;SUPDEMOD - Fashion design and business school;Ecole d'art;Lyon;Rhône;4.8345850000001;45.75929;100;200;6;0
+77;julie10;!xLCjBDzz25v;Ecole supérieure d'architecture intérieure de Lyon (groupe IDRAC);Ecole d'art;Lyon;Rhône;4.805519;45.770445;100;200;4;2
+78;nathaliedupuis;@U6N%fmK7PcU;Ecole nationale supérieure des beaux-arts de Lyon;Ecole d'art;Lyon;Rhône;4.816325;45.767973;100;200;4;0
+79;bazinagnes;8^Q_g@st)6Pm;Studio M;Ecole d'art;Villeurbanne;Rhône;4.774205;45.805452;100;200;7;2
+80;hortensebouvier;$N4nUWnhvv&&;Institut privé des métiers - SEPR;Autre établissement du supérieur;Lyon;Rhône;4.8769893;45.7457404;100;200;4;1
+81;pblanchet;PPw^aHqOyK63;La CinéFabrique;Ecole d'art;Lyon;Rhône;4.8258216;45.7966396;100;200;4;1
+82;vbonneau;2*@K3tUd$32w;ECAM LaSalle - Lyon;Ecole d'ingénieurs;Lyon;Rhône;4.825007;45.762476;100;200;5;2
+83;malletcorinne;2ke2PHxB(c3g;Institut national des sciences appliquées de Lyon;Ecole d'ingénieurs;Villeurbanne;Rhône;4.881686;45.783223;100;200;5;1
+84;riviereveronique;t&p7OCVeEjY#;Ecole de commerce européenne - programme BBA Inseec;Ecole de gestion et de commerce;Lyon;Rhône;4.8392315999999;45.7508708;100;200;1;0
+85;leoncoste;$CTp%5IgG0l2;Groupe Sciences U Lyon - CRESPA;Ecole de gestion et de commerce;Lyon;Rhône;4.865693;45.747483;100;200;4;0
+86;thierrysebastien;%ixH^G8w5TJX;Institut de management des industries de la santé (groupe IGS);Ecole de gestion et de commerce;Lyon;Rhône;4.805467;45.768032;100;200;5;0
+87;david20;azV5tMUgh+3&;EKLYA - School of business - campus de Lyon;Ecole de gestion et de commerce;Ecully;Rhône;4.805468;45.771536;100;200;3;0
+88;yramos;(7InswwrgnJl;ENTPE Lyon;Ecole d'ingénieurs;Vaulx-en-Velin;Rhône;4.922196;45.779035;100;200;5;1
+89;guillaume89;B**xc7u1WF9X;Ecole supérieure de Chimie, Physique, Electronique de Lyon;Ecole d'ingénieurs;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;3;1
+90;gblondel;)COcJFHJw27t;Institut de formation d'aides-soignants et d'auxiliaires de puériculture - la Maisonnée;Ecole de santé;Francheville;Rhône;4.772908;45.741986;100;200;3;1
+91;zmary;^R^Hc$O@^2Vk;Ecole supérieure de Chimie, Physique, Electronique de Lyon;Ecole d'ingénieurs;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;6;2
+92;sophie81;%bZ*HfpR)y1m;Ecole supérieure d'économie d'art et de communication (EAC);Ecole d'art;Lyon;Rhône;4.8356973386577;45.769966564805;100;200;1;2
+93;bonnetalexandre;BB4hv4b!7VG#;GRIM-EDIF;Ecole d'art;Lyon;Rhône;4.843848;45.752684;100;200;4;0
+94;nicolehernandez;(cY84PBjk4LP;Ecole centrale de Lyon;Ecole d'ingénieurs;Ecully;Rhône;4.765177;45.785736;100;200;2;0
+95;lemaireedouard;Mq^^X)VdI@8);CESI Ecole d'ingénieurs - campus de Lyon;Ecole d'ingénieurs;Ecully;Rhône;4.765865;45.783799;100;200;6;0
+96;maceconstance;)!4POu7sFG&3;ESMOD international;Ecole d'art;Lyon;Rhône;4.8305332;45.7699299;100;200;3;0
+97;herverichard;15+@PQse%NL4;EPITA Lyon;Ecole d'ingénieurs;Lyon;Rhône;4.8271029;45.754207;100;200;1;1
+98;dmartinez;S0(3*VUiHV+3;emlyon business school;Ecole de gestion et de commerce;Ecully;Rhône;4.764917;45.786587;100;200;7;1
+99;bonninmarcel;8rK7Pq3Y)0sP;CESI Ecole d'ingénieurs informatique - campus de Lyon;Ecole d'ingénieurs;Ecully;Rhône;4.765865;45.783799;100;200;3;0
+100;amarty;6XWw$fqhL%v5;Institut de formation en soins infirmiers et Institut de formation d'aides-soignants des HCL - site Clemenceau;Ecole de santé;Saint-Genis-Laval;Rhône;4.795696;45.701476;100;200;7;0
+101;christophe93;3hr@rwTLh0SU;ICOGES Rhône-Alpes;Ecole de gestion et de commerce;Lyon;Rhône;4.8581486;45.7621317;100;200;3;2
+102;lroger;f0Og$daj$C#7;Institut supérieur de gestion;Ecole de gestion et de commerce;Lyon;Rhône;4.8588745368054;45.754948035906;100;200;5;0
+103;gtecher;_0dU29dUw0Fc;Centre d'études franco-américain de management;Ecole de gestion et de commerce;Lyon;Rhône;4.805467;45.768032;100;200;6;1
+104;pasquieretienne;)#0JcZp@3^BO;Horizon Santé;Ecole de santé;Lyon;Rhône;4.828835;45.768228;100;200;3;0
+105;zlefevre;fp2Laq8DMU&E;Sup' La Mache - Institut supérieur de technologie de Lyon (ISTL);Ecole de gestion et de commerce;Lyon;Rhône;4.869863;45.736678;100;200;6;2
+106;nathalieperrin;J5ZSKj5xM!7!;The School of Advanced Management and Finance;Ecole de gestion et de commerce;Lyon;Rhône;4.805467;45.768032;100;200;4;1
+107;bsauvage;HijY%8AicypM;Ecole supérieure de commerce et développement - 3A;Ecole de gestion et de commerce;Lyon;Rhône;4.805467;45.768032;100;200;2;0
+108;psanchez;8uSNy!dx!EOE;Ecole supérieure des sciences commerciales d'Angers;Ecole de gestion et de commerce;Lyon;Rhône;;;100;200;6;2
+109;daniellegilles;p&Gk0KQrJZZL;Institut de formation aux carrières de santé des HCL - site Esquirol;Ecole de santé;Lyon;Rhône;4.886324;45.741629;100;200;6;1
+110;lesageanais;x(9IHRAckbUg;Institut supérieur d'optique de Lyon;Ecole de santé;Lyon;Rhône;4.832701;45.746416;100;200;1;0
+111;rschmitt;^sGUKzvD3dAY;Institut de formation en soins infirmiers - hôpital Le Vinatier;Ecole de santé;Bron;Rhône;4.891843;45.738368;100;200;4;1
+112;rene24;G)4K!)r@!W3w;Institut supérieur d'ostéopathie de Lyon;Ecole de santé;Ecully;Rhône;4.7604274749756;45.784763729574;100;200;3;2
+113;henriette36;k2!Gmaf2Ts6B;Institut de formation d'aides-soignants de l'Argentière;Ecole de santé;Aveize;Rhône;4.477940083;45.68082047;100;200;1;2
+114;flanglois;@CW+gK@d&!#7;Inseec School of Business and Economics - groupe Inseec;Ecole de gestion et de commerce;Lyon;Rhône;4.8369680000001;45.7707026;100;200;3;2
+115;qmartel;vzIfy&DoM2^y;Burgundy School of Business;Ecole de gestion et de commerce;Lyon;Rhône;4.824707;45.7461805;100;200;2;1
+116;lgallet;As1nMwgrx#kh;CRESFA Formation - Sciences U Lyon;Ecole de gestion et de commerce;Lyon;Rhône;4.865693;45.747483;100;200;4;0
+117;pbrunel;E2@yXj*DrHYV;Pôle formation santé-Lyon;Ecole de santé;Lyon;Rhône;4.7999856;45.7775465;100;200;5;2
+118;suzanne36;Z)K75_HMccs&;Institut de formation en soins infirmiers et formation d'aides soignants J. Lepercq, Hôpital St-Joseph St-Luc;Ecole de santé;Lyon;Rhône;4.839056;45.746994;100;200;5;2
+119;hamelmonique;(b2W9ftpt!%n;Institut Paul Bocuse;Ecole de gestion et de commerce;Ecully;Rhône;4.778240204;45.77463913;100;200;3;2
+120;etoussaint;)u14Mbl0QljM;IDRAC Business School;Ecole de gestion et de commerce;Lyon;Rhône;4.8062299000001;45.7685487;100;200;6;2
+121;pauline67;@(JkMwFq^0ff;Césame;Ecole de santé;Lyon;Rhône;4.873101;45.744912;100;200;5;2
+122;duvalclaire;2tEq^tW&+KbE;CEESO Lyon Centre européen d'enseignement supérieur de l'ostéopathie;Ecole de santé;Lyon;Rhône;4.839996;45.753141;100;200;4;2
+123;stephanecollet;Fw3U7Y7)M()h;Ecole Rockefeller;Ecole de santé;Lyon;Rhône;4.885377;45.741223;100;200;2;2
+124;corinne65;+R6GQk3**2&_;Ecole supérieure du commerce extérieur;Ecole de gestion et de commerce;Lyon;Rhône;4.8401724;45.7510385;100;200;6;1
+125;laurentfaivre;(A66V^Wev_WU;Ecole de sages-femmes, faculté médecine et maïeutique Lyon-Sud, université Claude Bernard Lyon1;Ecole de santé;Oullins;Rhône;4.79839;45.7077414;100;200;4;1
+126;antoinettelaroche;$LrnIYe@SB8X;Association régionale pour la formation, la recherche et l'innovation en pratiques sociales;Ecole du secteur social;Lyon;Rhône;4.8099968;45.7890808;100;200;2;2
+127;boucherhelene;HSL&7PyjuMrH;Institut de formation en soins infirmiers et formation d'aides-soignants- Hôpital Nord-Ouest de Villefranche;Ecole de santé;Villefranche-sur-Saône;Rhône;4.702154;46.001825;100;200;4;0
+128;tristanbarre;_3)MZ&fekP&e;Institut de formation d'aides-soignant de l'hôpital Nord-Ouest Tarare;Ecole de santé;Tarare;Rhône;4.440767;45.891753;100;200;6;1
+129;benjamin27;+EGM2vyOPq4I;Andrew Taylor Still Academy Formation Initiale;Ecole de santé;Limonest;Rhône;4.7747426;45.8074642;100;200;1;2
+130;georgesmartine;Wb1NHqSnmn5+;Institut de formation aux carrières de santé des HCL-site Lacassagne;Ecole de santé;Lyon;Rhône;4.8893296;45.7446836;100;200;3;1
+131;paulinepichon;sK0t7PYdul@d;Ecole supérieure de biologie-biochimie-biotechnologies;Ecole de santé;Lyon;Rhône;4.8240999;45.7477113;100;200;7;0
+132;morenoauguste;5M2oD8Py@@Y1;IRFSS Auvergne-Rhône-Alpes - Croix-Rouge française- site de Lyon;Ecole de santé;Lyon;Rhône;4.8766955999999;45.7493665;100;200;7;0
+133;jacquelineroche;#3P4ynJd6&0O;UFR lettres, sciences du langage et arts;Unité de formation et de recherche;Lyon;Rhône;4.836115;45.750647;100;200;1;2
+134;thierry86;Hu!Roasff^1#;Faculté des sciences et technologies - Département informatique;Unité de formation et de recherche;Villeurbanne;Rhône;4.8647926;45.781382;100;200;5;0
+135;thibault99;F3$aupk8+cBE;Institut des sciences pharmaceutiques et biologiques;Unité de formation et de recherche;Lyon;Rhône;4.880568;45.742419;100;200;7;1
+136;lgodard;Qk8b7^UbL7^V;UFR droit et science politique;Unité de formation et de recherche;Lyon;Rhône;4.838203;45.750597;100;200;2;1
+137;lenoirandre;+5)&BsA0q!Iw;Centre de langues;Unité de formation et de recherche;Bron;Rhône;4.9149924;45.7229341;100;200;2;1
+138;fberger;N&%@y9ceuU*Y;Faculté de médecine Lyon-Est - Claude Bernard;Unité de formation et de recherche;Lyon;Rhône;4.880568;45.742419;100;200;6;2
+139;roland64;SKZ0&SjW+dY3;Institut des sciences et techniques de la réadaptation;Unité de formation et de recherche;Lyon;Rhône;4.880568;45.742419;100;200;2;1
+140;ddelannoy;*lCvGiJlS&3u;Institut Saint-Laurent;Ecole du secteur social;Ecully;Rhône;4.774822;45.781323;100;200;6;2
+141;vincentdaniel;d@REOMLbcP3j;Carrel Ecole des métiers de la santé et du social;Ecole du secteur social;Lyon;Rhône;4.8496046;45.7659591;100;200;6;1
+142;margotgilles;yb$5BBJz0url;Faculté des sciences et technologies - Département biologie;Unité de formation et de recherche;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;5;1
+143;gguillet;^Q!bI@_w9oL);Faculté d'odontologie;Unité de formation et de recherche;Lyon;Rhône;4.88738;45.737583;100;200;4;1
+144;marchanddiane;Zyp3TRfpY%)o;Institut de psychologie;Unité de formation et de recherche;Bron;Rhône;4.9149924;45.7229341;100;200;5;0
+145;elegendre;CzI+4zEk5Yx#;Faculté des sciences et technologies - Département génie électrique et des procédés;Unité de formation et de recherche;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;5;1
+146;hernandezleon;0!2RTBdij#gc;Institut d'études judiciaires;Unité de formation et de recherche;Lyon;Rhône;4.837055;45.751854;100;200;5;0
+147;jpoulain;RVQ4&*lw(cWd;Institut d'études du travail de Lyon;Unité de formation et de recherche;Lyon;Rhône;4.8382328;45.7513803;100;200;3;1
+148;cbriand;7e9Qb+Rr&ImE;Institut d'administration des entreprises;Unité de formation et de recherche;Lyon;Rhône;4.860764;45.749139;100;200;5;1
+149;deschampsanastasie;83wiuGGp!YCs;Institut des sciences et pratiques d'éducation et de formation;Unité de formation et de recherche;Lyon;Rhône;4.83722;45.749162;100;200;7;1
+150;rlebrun;8)wB1LqWd)Po;Institut de droit patrimonial et immobilier;Unité de formation et de recherche;Lyon;Rhône;4.837055;45.751854;100;200;5;2
+151;dianebonnin;r9YI^7Ke!f)t;UFR de sciences économiques et de gestion;Unité de formation et de recherche;Lyon;Rhône;4.836743;45.751451;100;200;4;1
+152;morvancelina;&(Z6qKIqAH80;Institut de la communication;Unité de formation et de recherche;Bron;Rhône;4.9149924;45.7229341;100;200;2;2
+153;aimeerousseau;vyYuAC4Q$8Ek;UFR Temps et Territoires;Unité de formation et de recherche;Bron;Rhône;4.9153229;45.7225722;100;200;3;2
+154;picardconstance;^G!F8UEqYv$B;IUT Lyon 1 (site de Villeurbanne Doua);Institut universitaire de technologie;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;6;0
+155;guillaumelopez;w*1oEMnQl123;IUT Lumière;Institut universitaire de technologie;Bron;Rhône;4.917685;45.723637;100;200;4;0
+156;omenard;^BcHHBagK3vF;Faculté de droit;Unité de formation et de recherche;Lyon;Rhône;4.86042;45.749289;100;200;3;0
+157;eleonoreramos;#AH)5j+kIv2&;UFR anthropologie, sociologie, science politique;Unité de formation et de recherche;Bron;Rhône;4.9149924;45.7229341;100;200;2;2
+158;zacharieperez;@c7U2xH9R+DJ;Institut de formation de techniciens de laboratoire médical;Ecole de santé;Lyon;Rhône;4.8240999;45.7477113;100;200;4;2
+159;bessonetienne;_)C2DQ#kbb)4;IUT Lyon 1 (site de Villeurbanne Gratte-ciel);Institut universitaire de technologie;Villeurbanne;Rhône;4.887054;45.766994;100;200;5;1
+160;robertreynaud;z@pd9Wc3nUyI;Faculté des sciences et technologies - Département chimie biochimie;Unité de formation et de recherche;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;3;1
+161;hubertmathilde;M0LZ8YkMyo(J;Faculté des langues;Unité de formation et de recherche;Lyon;Rhône;4.860764;45.749139;100;200;3;0
+162;pasquieradele;%9DgPkmX%xl!;UFR des langues;Unité de formation et de recherche;Bron;Rhône;4.9149924;45.7229341;100;200;4;2
+163;adrienne55;%lwjKVNh@449;Faculté des sciences et technologies - Département mathématiques;Unité de formation et de recherche;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;1;1
+164;edouardle-goff;@SS3qkqX9nR3;Observatoire des sciences de l'univers;Unité de formation et de recherche;Villeurbanne;Rhône;4.8656389;45.7802863;100;200;6;1
+165;sylviegautier;%ryB5zc4q5qJ;Institut de formation en masso-kinésithérapie pour déficients de la vue;Ecole de santé;Lyon;Rhône;4.8842;45.759433;100;200;4;0
+166;alvespatrick;U5PVKQ)a!GQP;Ecole santé social Sud-Est;Ecole de santé;Lyon;Rhône;4.805856;45.779802;100;200;1;0
+167;amelievasseur;@8R%vnzxm_Qt;IUT Jean Moulin - Lyon 3;Institut universitaire de technologie;Lyon;Rhône;4.8370392619019;45.748862934109;100;200;5;1
+168;tlemoine;Yb%3EyPyx^3Z;Faculté des sciences et technologies - Département de physique;Unité de formation et de recherche;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;1;1
+169;davidbuisson;V!9Tx#gOo^jL;Faculté des sciences et technologies - Département mécanique;Unité de formation et de recherche;Villeurbanne;Rhône;4.8670887;45.7789354;100;200;7;1
+170;duhamelolivier;((A^LhwnM8rg;Faculté de philosophie;Unité de formation et de recherche;Lyon;Rhône;4.8375659;45.7518154;100;200;6;2
+171;juliette57;*6TGEfRgU2zZ;Institut des assurances de Lyon;Unité de formation et de recherche;Lyon;Rhône;4.837055;45.751854;100;200;4;1
+172;fabretimothee;OeDGWLhi$51e;Institut formation et recherche sur les organisations sanitaires;Unité de formation et de recherche;Lyon;Rhône;4.842057;45.747762;100;200;7;1
+173;yribeiro;$&uRpgmy7_3T;UFR lettres, sciences du langage et arts;Unité de formation et de recherche;Bron;Rhône;4.9149924;45.7229341;100;200;1;0
+174;micheledupre;5srqvyQ%##dx;Faculté des lettres et civilisations;Unité de formation et de recherche;Lyon;Rhône;4.8370109;45.7498371;100;200;2;0
+175;bourgeoismaryse;*8D&(%Us0u5H;UFR droit et science politique;Unité de formation et de recherche;Bron;Rhône;4.9149924;45.7229341;100;200;2;0
+176;leclercaurelie;#rlNIjRJlp21;UFR Sciences et techniques des activités physiques et sportives;Unité de formation et de recherche;Villeurbanne;Rhône;4.861584;45.779458;100;200;6;1
+177;joseph49;puw9EQnoW_M5;Faculté des lettres et civilisations;Unité de formation et de recherche;Lyon;Rhône;4.86042;45.749289;100;200;6;2
+178;albertgregoire;2108ZWXbwZ(x;Faculté de philosophie;Unité de formation et de recherche;Lyon;Rhône;4.86042;45.749289;100;200;3;1
+179;carremargaux;%#8nIbxAYr$&;Faculté de médecine Lyon-Sud - Charles Mérieux;Unité de formation et de recherche;Oullins;Rhône;4.806976;45.704247;100;200;7;1
+180;zacharie19;PE_)8OGbp6RM;Institut national supérieur du professorat et de l'éducation (site de la Croix-Rousse);École supérieure du professorat et de l'éducation;Lyon;Rhône;4.824475;45.773776;100;200;5;0
+181;jeanneroger;BL7(By+FQ*5H;Faculté de droit;Unité de formation et de recherche;Lyon;Rhône;4.837055;45.751854;100;200;5;0

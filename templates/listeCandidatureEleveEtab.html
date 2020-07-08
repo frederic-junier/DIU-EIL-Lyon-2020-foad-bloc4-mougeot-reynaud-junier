@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>liste de candidatures par élève</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> résultat de recherche </h1>
+   
+
+  
+    <section>
+        <h2>Formulaire d'affichage de liste des candidatures 
+             de l'établissement du secondaire {{session['user']['nom']}}.  </h2>
+
+         
+        <p>Saisir l'identifiant de l'élève récupéré par ce <a href="/listeEleveEtab">formulaire</a> puis sélectionner le critère de tri :  </p>
+    <form action="/resultatCandidatureListeEleveEtab" method="post">
+        <ul>
+        <li><label for="idEleve">Identifiant de l'élève </label><input type="number" id="idEleve"  name="idEleve"></li>
+        <li><label for="type">Type</label>    <input type="radio" id="type"  name="tri" value="type" unchecked>
+        </li>  
+        <li><label for="statut">Statut</label>    <input type="radio" id="statut"  name="tri" value="statut"  unchecked>
+        </li>  
+    </ul>    
+        <input type="submit" value="Valider"/>
+    </form>
+    </section>
+
+  
+    <footer>
+        <h2>Pied de page</h2>
+        <ul>
+            <li> <a href="/interface">Retour à l'interface du profil</a></li>
+            <li> <a href="/listeEleveEtab">Formulaire de liste d'élèves</a></li>
+            <li><a href="/deconnexion">Déconnexion</a></li>
+        </ul>   
+      </footer>
+</body>
+</html> 

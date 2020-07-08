@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>stats admin apres</title>
+        <link rel ="stylesheet" type="text/css" href ="{{ url_for('static', filename='stylesheets/style_monavenir.css') }}"/> 
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface admin </h1>
+   
+
+        <section>
+            <h2>Statistiques par établissement avant la phase de réponses,  admin {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+         
+
+            <p> Saisir l'identifiant de  l'établissement puis cochez les statistiques  que vous souhaitez générer. </p>
+      
+      
+            <form action="/resultatStatsEtabAvant" method="post">                    
+
+            <ul>
+                <li> <a href="/rechercheFormation">Recherche d'un établissement</a></li>
+                <li><label for='idSuperieur'>Identifiant de l'établissement : </label>
+                     <input type='text' id='idSuperieur' name='idSuperieur' required></li>
+            
+                <li><label for="total">Nombre total de candidatures pour l'établissement </label><input type="checkbox" id="total" name="total"
+                    unchecked></li>
+                <!--  TO DO , à compléter       -->    
+            </ul>
+                
+            <input type="submit" value="Valider"/>
+        </form>           
+    
+    
+    </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

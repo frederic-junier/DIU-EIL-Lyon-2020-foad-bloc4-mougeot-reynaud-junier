@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>stats admin avant</title>
+        <link rel ="stylesheet" type="text/css" href ="{{ url_for('static', filename='stylesheets/style_monavenir.css') }}"/> 
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface admin </h1>
+   
+
+        <section>
+            <h2>Statistiques après la phase de réponses,  admin {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+         
+            <p>Établissement : {{stats['nom']}}</p>
+
+            <ul>
+            {% if 'refus' in stats %}
+            <li>Nombre total de candidatures refusées : {{stats['refus']}} </li>
+            {% endif %}
+            {% if 'seuilAdmis' in stats %}
+            <li>Moyenne du dernier candidat admis dans la liste d'appel : {{stats['seuilAdmis']}} </li>
+            {% endif %}
+            {% if 'seuilAttente' in stats %}
+            <li>Moyenne du dernier candidat en attente dans la liste d'appel: {{stats['seuilAttente']}} </li>
+            {% endif %}
+            {% if 'candidLycee' in stats %}
+            <li> Nombre de candidatures par lycée :
+              <ul>
+              {% for lycee in stats['candidLycee'] %}
+                <li>Lycée {{lycee['nom']}} :  {{lycee['nb']}} candidats.</li>
+              {% endfor %}
+            </ul>
+            </li>
+            {% endif %}
+                 </ul>
+        </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li><a href="/deconnexion">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

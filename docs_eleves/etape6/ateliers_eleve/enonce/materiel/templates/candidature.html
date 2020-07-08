@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>candidatures élèves</title>
+		 <link rel ="stylesheet" type="text/css" href ="{{ url_for('static', filename='stylesheets/style_monavenir.css') }}"/> 
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface élève </h1>
+   
+        
+        <section>
+            <h2>Formulaire de gestion des candidatures  du  compte de {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+
+            <p>Cochez les candidatures que vous souhaitez supprimer. </p>
+		<form action="/modifierCandidature" method="post">
+            <ol>
+                {% for candidature in session['liste_candidature'] %}
+                <li> 
+                    <ul>                  
+                    <li> Nom de l'établissement : {{candidature['nom']}} </li>
+                    <li> Type de l'établissement : {{candidature['type']}}  </li>
+                    <!---  TO DO à compléter  -->
+                </ul>
+                </li>
+                {% endfor %}
+                <li><label for="newCandid">Nouvelle candidature</label>  <input type="number" name="newCandid" id="newCandid"></li>
+            </ol>
+                
+            <input type="submit" value="Valider"/>
+        </form>
+
+        <!-- Messages d'alertes transmis par une page précédente-->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+           <div class="flashes">
+            Messages d'alerte :
+            <ul>                
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+        {% endwith %}
+
+            </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li> <a href="/rechercheFormation">Recherche de formation</a></li>                
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Recherche de formation</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> résultat de recherche </h1>
+   
+
+   <section>
+   <h2> Liste des établissements répondant aux critères :  </h2>
+
+    <ul>
+        <li> Type : {{result['type']}} </li>
+        <li> Commune : {{result['commune']}}</li>
+    </ul>
+
+<ol>
+
+    {% for etab in liste_sup %}
+    <li> 
+        <ul>
+
+            <li> Nom : {{ etab['nom'] }} </li>
+            <li> Type : {{ etab['type'] }} </li>
+            <li> Commune : {{ etab['commune'] }} </li>
+            <li> Identifiant (à saisir dans le formulaire de candidature ) :{{ etab['idSuperieur'] }}  </li>
+        </ul>
+
+
+    </li>
+   {% endfor %}
+
+</ol>
+<section>
+  
+    <footer>
+        <h2>Pied de page</h2>
+        <ul>
+            <li> <a href="/interface">Retour à l'interface du profil</a></li>
+            <li> <a href="/rechercheFormation">Recherche de formation</a></li> 
+            {% if session['profil'] == 'eleve' %}  
+            <li> <a href="/candidature">Gestion des candidatures</a></li>
+            {% endif %}
+            <li><a href="/deconnexion">Déconnexion</a></li>
+        </ul>   
+      </footer>
+</body>
+</html> 

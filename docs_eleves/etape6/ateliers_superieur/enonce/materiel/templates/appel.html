@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>formulaire liste d'appel</title>
+		 <link rel ="stylesheet" type="text/css" href ="{{ url_for('static', filename='stylesheets/style_monavenir.css') }}"/> 
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface établissement </h1>
+   
+        
+        <section>
+            <h2>Formulaire d'affichage de liste d'appel de l'établissement {{session['user']['nom']}}.  </h2>
+
+
+            <p>Cochez les statuts (<em>admis</em> et/ou <em>en attente</em>) que vous souhaitez afficher 
+                dans liste d'appel. </p>
+		<form action="/resultatAppel" method="post">
+            <ul>
+            <li><label for="admis">Admis</label>    <input type="checkbox" id="admis"  name="admis"  unchecked>
+            </li>  
+              <!--  TO DO à compléter -->
+            </li>  
+        </ul>    
+            <input type="submit" value="Valider"/>
+        </form>
+        </section>
+
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>             
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

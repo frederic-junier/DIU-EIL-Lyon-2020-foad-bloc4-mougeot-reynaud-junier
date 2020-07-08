@@ -1,37 +1,100 @@
-## Welcome to GitHub Pages
+# foad-bloc4-mougeot-reynaud-junier
 
-You can use the [editor on GitHub](https://github.com/frederic-junier/-foad-bloc4-mougeot-reynaud-junier/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## De quoi s'agit-il ?
 
-### Markdown
+- FOAD bloc 4 pour le DIU-EIL de Lyon 2019/2020
+- Trinôme composé de Brigitte Mougeot, Véronique Reynaud et Frédéric Junier
+- Code : BD4
+- Thème : Base de données
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Descriptif
 
-```markdown
-Syntax highlighted code block
+* __Objectif :__ 
+    * créer un mini Parcoursup application web destinée à recueillir et gérer les vœux d'affectation de lycéens du Rhône  pour un établissement de l'enseignement supérieur dans le Rhône.
+* __Liens :__
+    *   [tous les fichiers nécessaires pour l'application](https://gitlab.com/frederic-junier/foad-bloc4-mougeot-reynaud-junier/-/tree/master/)        
+    *   [Le document de synthèse de l'activité MonAvenir.pdf](docs_eleves/)
+    *   [Les documents élèves pour l'étape 4](docs_eleves/etape4)
+    *   [Les documents élèves pour l'étape 6](docs_eleves/etape6)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+## Mode d'emploi 
 
-1. Numbered
-2. List
+Notre projet `monavenir` est constitué des fichiers suivants :
 
-**Bold** and _Italic_ and `Code` text
+* Un script SQL  `creer_base_mona-avenir.sql` qui va créer les différentes tables de la base dont le scéham est donné ci-dessous :
 
-[Link](url) and ![Image](src)
-```
+```sql
+    sqlite> .open monavenir.db
+    sqlite> .schema
+    CREATE TABLE admin(
+        idAdmin INT PRIMARY KEY,  
+        login TEXT  UNIQUE NOT NULL, 
+        password TEXT NOT NULL,
+        nom TEXT NOT NULL,
+        prenom TEXT NOT NULL
+    );
+    CREATE TABLE lycee(
+        idLycee INT PRIMARY KEY,  
+        login TEXT UNIQUE NOT NULL, 
+        password TEXT NOT NULL,
+        nom TEXT NOT NULL,
+        commune TEXT NOT NULL
+    );
+    CREATE TABLE superieur(
+        idSuperieur INT PRIMARY KEY,  
+        login TEXT UNIQUE NOT NULL, 
+        password TEXT NOT NULL,
+        nom TEXT NOT NULL,
+        type TEXT,
+        commune TEXT NOT NULL,
+        latitude TEXT,
+        longitude TEXT,
+        nbAdmis INT NOT NULL CHECK(nbAdmis >= 0) DEFAULT 100,
+        nbAppel INT NOT NULL CHECK(nbAppel >= 0)  DEFAULT 200,
+        coefNote1 INT CHECK(0 <= coefNote1) DEFAULT 1,
+        coefNote2 INT CHECK(0 <= coefNote2) DEFAULT 1,
+        CHECK((0 < coefNote2 OR 0 < coefNote1) AND (nbAdmis <= nbAppel))
+    );
+    CREATE TABLE eleve(
+        idEleve INT PRIMARY KEY,
+        idLycee INT REFERENCES lycee(idLycee),
+        login TEXT UNIQUE NOT NULL, 
+        password TEXT NOT NULL,	
+        nom TEXT NOT NULL,
+        prenom TEXT NOT NULL,
+        anneeNaissance INT NOT NULL,
+        note1 FLOAT CHECK( 2 <= note1 <= 20 OR NULL),
+        note2 FLOAT CHECK( 2 <= note2 <= 20 OR NULL)
+    );
+    CREATE TABLE candidature(
+        idEleve INT NOT NULL REFERENCES eleve(idEleve),
+        idSuperieur INT NOT NULL REFERENCES superieur(idSuperieur),
+        statut TEXT CHECK (statut IN ('nonTraite', 'refuse', 'enAttente',  'admis', 'abandonne')) DEFAULT 'nonTraite',
+        PRIMARY KEY(idEleve, idSuperieur)
+    );
+``` 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/frederic-junier/-foad-bloc4-mougeot-reynaud-junier/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+* Un script Python `peupler_base_csv.py` pour générer des fichiers csv dans un dossier `csv` avec les enregistrements qui vont peupler les différentes tables de la base. Certains éléments  (login ,password, noms d'élèves) sont générés aléatoirement avec le module `Faker`de Python, d'autres (noms des lycées, des établissements du supérieur, type d'établissements, coordonnées GPS) proviennent de deux fichiers en OpenData  : `superieur-rhone-data.csv` et `lycee-rhone-data.csv`. Seront créés dans un dossier `csv`:
+  * un fichier élève par lycée peupler la table `eleve`
+  * un fichier pour peupler la table `admin`
+  * un fichier pour peupler la table `lycee`
+  * un fichier pour peupler la table `superieur`
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* Un script Python `peupler_base_bd.py` qui va exécuter le script SQL de création de la base puis va peupler ses différentes tables à partir des enregistrements stockés dans les fichiers csv. Le module Python `sqlite3` est utilisé.
+
+
+* Un script   `main.py`  dont l'exécution lance un serveur HTTP et une interface Web de gestion de l'application. Le module Python `Flask` est utilisé. Tous les templates HTML nécessaires sont dans le dossier `templates`  et le dossier `static` pourra contenir les feuilles de style CSS.
+
+* Pour construire la base de données, il faut exécuter dans l'ordre :
+  * Première étape :le script `peupler_base_csv.py`  avec `python3 peupler_base_csv.py` ou `./peupler_base_csv.py`si le script a été rendu exécutable
+  * Deuxième étape : le script  `peupler_base_bd.py`  ou `./peupler_base_bd.py` si le script a été rendu exécutable
+  * Alternative : on peut utiliser le fichier Makefile avec la commande make : 
+    * `make` ou `make all` effectuera toutes les actions nécessaires pour construire la base
+    * `make clean` supprimera le dossier `csv` et la base `monavenir.db` 
+    * `make fresh`  exécutera `make clean` puis `make all`
+

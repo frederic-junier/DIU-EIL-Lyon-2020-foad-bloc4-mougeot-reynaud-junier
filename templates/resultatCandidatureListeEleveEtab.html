@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Liste des candidatures d'un élève</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> interface établissement</h1>
+   
+
+   <section>
+      
+      <h2> Liste des candidatures de l'élève {{liste_candid[0]['prenom']}} {{liste_candid[0]['nom']}} 
+          de l'établissement du secondaire {{session['user']['nom']}}.  </h2>
+  
+  
+      <ol>
+
+    {% for candid in liste_candid %}
+    <li> 
+        <ul>
+            <li> Établissement :  {{ candid['nomEtab'] }}</li>
+            <li> Type :  {{ candid['type'] }}</li>
+            <li> Statut :  {{ candid['statut'] }}</li>
+
+        </ul>
+    </li>
+   {% endfor %}
+
+</ol>
+<section>
+  
+    <footer>
+        <h2>Pied de page</h2>
+        <ul>
+            <li> <a href="/interface">Retour à l'interface du profil</a></li>
+            <li> <a href="/listeCandidatureEleveEtab">Formulaire de sélection de liste d'élèves </a></li>   
+            <li><a href="/deconnexion">Déconnexion</a></li>
+        </ul>   
+      </footer>
+</body>
+</html> 

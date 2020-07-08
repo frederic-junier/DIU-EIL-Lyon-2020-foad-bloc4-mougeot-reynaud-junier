@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>candidatures élèves</title>
+		 <link rel ="stylesheet" type="text/css" href ="{{ url_for('static', filename='stylesheets/style_monavenir.css') }}"/> 
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface élève </h1>
+   
+        
+        <section>
+            <h2>Formulaire de gestion des réponses aux candidatures du  compte de {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+
+
+            <p>Cochez les candidatures  que vous souhaitez abandonner dans la liste des réponses à vos candidatures. </p>
+		<form action="/modifierReponses" method="post">
+            <ol>
+                {% for reponse in session['liste_reponses'] %}
+                <li> 
+                    <ul>                  
+                    <li> Nom de l'établissement : {{reponse['nomEtab']}} </li>
+                    <li> Type de l'établissement : {{reponse['type']}}  </li>
+                    <li> Commune de l'établissement : {{reponse['commune']}}  </li>
+                    <li> Identifiant  de l'établissement : {{reponse['idSuperieur']}}  </li>
+                    <li> Statut de la réponse : {{reponse['statut']}}  </li>
+                    {% if reponse['statut'] in ('enAttente','admis') %}
+                    <li><label for="({{reponse['idSuperieur']}},{{reponse['idEleve']}},{{reponse['statut']}})">Abandonner la candidature</label>
+                        <input type="checkbox" id="({{reponse['idSuperieur']}},{{reponse['idEleve']}},{{reponse['statut']}})" 
+                        name="({{reponse['idSuperieur']}},{{reponse['idEleve']}},{{reponse['statut']}})"  unchecked>
+                    </li>  
+                    {% endif %}
+                </ul>
+                </li>
+                {% endfor %}
+            </ol>
+                
+            <input type="submit" value="Valider"/>
+        </form>
+
+     
+            </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>             
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

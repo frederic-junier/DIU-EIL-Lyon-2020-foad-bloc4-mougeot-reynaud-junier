@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Véronique Reynaud, Brigitte Mougeot, Frédéric Junier" />
+  <title>Projet “Mon avenir”, Étape 6, Ateliers élèves, TP noté</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="--mathjax" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Projet “Mon avenir”, Étape 6, Ateliers élèves, TP noté</h1>
+<p class="author">Véronique Reynaud, Brigitte Mougeot, Frédéric Junier</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<h2 id="toc-title">Table des matières</h2>
+<ul>
+<li><a href="#atelier-élève-n1">Atelier <code>élève</code> n°1</a></li>
+<li><a href="#atelier-élève-n2">Atelier <code>élève</code> n°2</a></li>
+</ul>
+</nav>
+<p>Pour commencer, il faut récupérer l’archive <a href="./materiel.zip">materiel.zip</a> puis l’extraire. Dans le répertoire créé on doit avoir l’arborescence ci-dessous :</p>
+<p><img src="images/arborescence.png" style="width:25.0%" alt="arborescence" /><br />
+</p>
+<p>Dans chaque atelier <code>élève</code>, vous devez répondre à un cahier des charges, en complétant pour chaque fonctionnalité demandée :</p>
+<ul>
+<li>un formulaire <a href="https://developer.mozilla.org/fr/docs/Glossaire/HTML">HTML</a> dans le dossier <em>templates</em></li>
+<li>une fonction <strong>contrôleur de route</strong> dans le script Python <code>main.py</code> en vous aidant des activités réalisées à l’étape 4</li>
+<li>une page <a href="https://developer.mozilla.org/fr/docs/Glossaire/HTML">HTML</a> retournée par la fonction <strong>contrôleur de route</strong> et placée dans le répertoire <code>templates</code>.</li>
+</ul>
+<p>Lancer l’application web en exécutant le fichier <code>main.py</code> et se connecter avec le profil <code>élève</code> et le compte d’identifiants <code>(login, password) = (eleve, test)</code>. On arrive alors sur l’interface d’accueil du profil.</p>
+<p><img src="images/formulaire-connexion.png" alt="connexion" /><br />
+</p>
+<h1 id="atelier-élève-n1">Atelier <code>élève</code> n°1</h1>
+<blockquote>
+<p><strong>Cahier des charges :</strong></p>
+</blockquote>
+<ul>
+<li>Créer un fichier Libre-Office <code>compte-rendu.odt</code> à la racine du répertoire <code>materiel</code>.<br />
+</li>
+<li>Compléter le formulaire dans le fichier <code>compte.html</code> du répertoire <code>templates</code> afin qu’il s’affiche comme ci-dessous lorsqu’on clique sur le lien <code>Consulter/Modifier les paramètres de son compte</code> de l’interface élève. Les paramètres du formulaire sont les attributs récupérés lors de la connexion dans <code>session['user']</code> : <code>login</code>, <code>anneeNaissance</code>, <code>note1</code>, <code>note2</code>.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">&lt;form</span><span class="ot"> action=</span><span class="st">&quot;/modifierCompte&quot;</span><span class="ot"> method=</span><span class="st">&quot;post&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>            <span class="kw">&lt;ul&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>                <span class="kw">&lt;li&gt;&lt;label</span><span class="ot"> for=</span><span class="st">&#39;nom&#39;</span><span class="kw">&gt;</span>Nom : <span class="kw">&lt;/label&gt;</span> <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&#39;text&#39;</span><span class="ot"> id=</span><span class="st">&#39;nom&#39;</span><span class="ot"> name=</span><span class="st">&#39;nom&#39;</span><span class="ot"> value=</span><span class="st">&quot;{{session[&#39;user&#39;][&#39;nom&#39;]}}&quot;</span><span class="kw">&gt;&lt;/li&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>                <span class="kw">&lt;li&gt;&lt;label</span><span class="ot"> for=</span><span class="st">&#39;prenom&#39;</span><span class="kw">&gt;</span>Prénom : <span class="kw">&lt;/label&gt;</span> <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&#39;text&#39;</span><span class="ot"> id=</span><span class="st">&#39;prenom&#39;</span><span class="ot"> name=</span><span class="st">&#39;prenom&#39;</span><span class="ot"> value=</span><span class="st">&quot;{{session[&#39;user&#39;][&#39;prenom&#39;]}}&quot;</span><span class="kw">&gt;&lt;/li&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>                <span class="co">&lt;!--   TO DO  : à compléter                     --&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>            <span class="kw">&lt;/ul&gt;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>                </span>
+<span id="cb1-9"><a href="#cb1-9"></a>            <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="ot"> value=</span><span class="st">&quot;Valider&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="kw">&lt;/form&gt;</span></span></code></pre></div>
+<ul>
+<li>Préciser dans le fichier <code>compte-rendu.odt</code> les étapes successives entre le clic sur le lien <code>Consulter/Modifier les paramètres de son compte</code> et l’affichage de <code>compte.html</code> dans le navigateur.</li>
+</ul>
+<p><img src="images/compte.png" alt="compte" /><br />
+</p>
+<ul>
+<li>Compléter la fonction <code>requeteMajCompte</code> dans le <strong>contrôleur de route</strong> <code>modifierCompte</code> du script <code>main.py</code> afin que le clic sur le bouton <code>Envoyer</code> du formulaire dans <code>compte.html</code> permette la mise à jour des paramètres du compte.</li>
+</ul>
+<p><img src="images/parametres-compte.png" alt="paramètres compte" /><br />
+</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a>controleur de route <span class="op">/</span> URL</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="at">@app.route</span>(<span class="st">&#39;/modifierCompte&#39;</span>, methods <span class="op">=</span> [<span class="st">&#39;POST&#39;</span>])</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="kw">def</span> modifierCompte():</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    <span class="co">&quot;Controleur de la route &#39;/modifierCompte&#39; &quot;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="kw">def</span> requeteMajCompte(conn, cur, result, idEleve):</span>
+<span id="cb2-7"><a href="#cb2-7"></a>        <span class="cf">for</span> name, value <span class="kw">in</span> result.items(): <span class="co">#pour chaque champ du formulaire</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>            <span class="cf">if</span> result[name]:  <span class="co">#si l&#39;attribut/champ du formulaire a été modifié</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>                <span class="co">#on met à jour la table eleve avec la nouvelle valeur</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a>                <span class="co">### TO DO requête SQL à compléter</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a>                requete <span class="op">=</span> <span class="st">&quot;&quot;</span>.<span class="bu">format</span>(name)</span>
+<span id="cb2-12"><a href="#cb2-12"></a>                cur.execute(requete, (value, idEleve))</span>
+<span id="cb2-13"><a href="#cb2-13"></a>                <span class="co">#on met à jour le dictionnaire du cookie de session voir https://flask.palletsprojects.com/en/1.1.x/api/#sessions</span></span>
+<span id="cb2-14"><a href="#cb2-14"></a>                session[<span class="st">&#39;user&#39;</span>][name] <span class="op">=</span> value </span>
+<span id="cb2-15"><a href="#cb2-15"></a>                session.modified <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb2-16"><a href="#cb2-16"></a>        </span>
+<span id="cb2-17"><a href="#cb2-17"></a>    <span class="co">#analyse du formulaire</span></span>
+<span id="cb2-18"><a href="#cb2-18"></a>    <span class="cf">if</span> request.method <span class="op">==</span> <span class="st">&#39;POST&#39;</span>:</span>
+<span id="cb2-19"><a href="#cb2-19"></a>        <span class="co">#ouverture du formulaire</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a>        result <span class="op">=</span> request.form</span>
+<span id="cb2-21"><a href="#cb2-21"></a>        <span class="co">#ouverture de connexion à la BDD</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a>        conn <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">&#39;monavenir.db&#39;</span>)      </span>
+<span id="cb2-23"><a href="#cb2-23"></a>        cur <span class="op">=</span> conn.cursor()</span>
+<span id="cb2-24"><a href="#cb2-24"></a>        <span class="co">#on récupère l&#39;idEleve dans le dictionnaire de session</span></span>
+<span id="cb2-25"><a href="#cb2-25"></a>        idEleve <span class="op">=</span> session[<span class="st">&#39;user&#39;</span>][<span class="st">&#39;idEleve&#39;</span>] </span>
+<span id="cb2-26"><a href="#cb2-26"></a>        requeteMajCompte(conn, cur, result, idEleve)</span>
+<span id="cb2-27"><a href="#cb2-27"></a>        <span class="co">#enregistrement des modifications dans la BDD</span></span>
+<span id="cb2-28"><a href="#cb2-28"></a>        conn.commit()</span>
+<span id="cb2-29"><a href="#cb2-29"></a>        <span class="co">#fermeture de connexion à la BDD</span></span>
+<span id="cb2-30"><a href="#cb2-30"></a>        cur.close()</span>
+<span id="cb2-31"><a href="#cb2-31"></a>        conn.close()</span>
+<span id="cb2-32"><a href="#cb2-32"></a>    <span class="cf">return</span> render_template(<span class="st">&quot;compte.html&quot;</span>)</span></code></pre></div>
+<ul>
+<li>Compléter la fonction <code>requeteListeCandidature</code> dans le <strong>contrôleur de route</strong> <code>candidature</code> de <code>main.py</code> afin qu’elle détermine la liste des candidatures de l’élève. Cette liste est nécessaire à l’affichage du formulaire de gestion des candidatures avant la phase de réponses lorsqu’on clique sur <code>Gérer ses candidatures : afficher, supprimer, ajouter.</code> dans l’interface élève.</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a><span class="co">#controleur de route / URL</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="at">@app.route</span>(<span class="st">&#39;/candidature&#39;</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">def</span> candidature():</span>
+<span id="cb3-4"><a href="#cb3-4"></a>    <span class="co">&quot;Controleur de la route &#39;/candidature&#39; &quot;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a>        <span class="kw">def</span> requeteListeCandidature(conn, cur, idEleve):</span>
+<span id="cb3-7"><a href="#cb3-7"></a>        <span class="co">##### TO DO  requete SQL à compléter </span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>        requete <span class="op">=</span> <span class="st">&quot;&quot;&quot;  &quot;&quot;&quot;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>        cur.execute(requete, (idEleve,))</span>
+<span id="cb3-10"><a href="#cb3-10"></a>        <span class="cf">return</span> cur.fetchall()</span>
+<span id="cb3-11"><a href="#cb3-11"></a>        </span>
+<span id="cb3-12"><a href="#cb3-12"></a>        </span>
+<span id="cb3-13"><a href="#cb3-13"></a> </span>
+<span id="cb3-14"><a href="#cb3-14"></a>    <span class="co">#ouverture de connexion à la BDD</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>    conn <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">&#39;monavenir.db&#39;</span>)  </span>
+<span id="cb3-16"><a href="#cb3-16"></a>    conn.row_factory <span class="op">=</span>  sqlite3.Row  <span class="co">#pour récupérer les lignes sous forme de dictionnaire         </span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>    cur <span class="op">=</span> conn.cursor()</span>
+<span id="cb3-18"><a href="#cb3-18"></a>    <span class="co">#on récupère l&#39;idEleve dans le cookie de session</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a>    idEleve <span class="op">=</span> session[<span class="st">&#39;user&#39;</span>][<span class="st">&#39;idEleve&#39;</span>] </span>
+<span id="cb3-20"><a href="#cb3-20"></a>    <span class="co">#requete</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a>    liste_candidature <span class="op">=</span> requeteListeCandidature(conn, cur, idEleve)</span>
+<span id="cb3-22"><a href="#cb3-22"></a>    <span class="co">#mise à jour du dictionnaire du cookie de session pour récupérer liste_candidature dans modifierCandidature voir https://flask.palletsprojects.com/en/1.1.x/api/#sessions</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>    session[<span class="st">&#39;liste_candidature&#39;</span>] <span class="op">=</span> [<span class="bu">dict</span>(candidature) <span class="cf">for</span> candidature <span class="kw">in</span> liste_candidature]</span>
+<span id="cb3-24"><a href="#cb3-24"></a>    session.modified <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>    <span class="co">#fermeture de connexion à la BDD</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>    cur.close()</span>
+<span id="cb3-27"><a href="#cb3-27"></a>    conn.close()</span>
+<span id="cb3-28"><a href="#cb3-28"></a>    <span class="co">#renvoi du template</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>    <span class="cf">return</span> render_template(<span class="st">&quot;candidature.html&quot;</span>, MAX_CANDIDATURE <span class="op">=</span> MAX_CANDIDATURE)</span></code></pre></div>
+<ul>
+<li><p>Préciser dans le fichier <code>compte-rendu.odt</code> les étapes successives entre le clic sur le lien <code>Gérer ses candidatures : afficher, supprimer, ajouter.</code> et l’affichage de <code>candidature.html</code> dans le navigateur.</p></li>
+<li><p>Compléter ensuite le fichier <code>candidature.html</code> du répertoire <code>templates</code> afin que le formulaire s’affiche comme ci-dessous lorsqu’on clique sur le lien <code>Gérer ses candidatures : afficher, supprimer, ajouter.</code> de l’interface élève. La première image montre le haut du formulaire avec la liste des candidatures. On supprime une candidature en la cochant. La seconde image montre le bas avec la possibilité de saisir une nouvelle candidature à l’aide de son identifiant récupéré par le formulaire de recherche de formation <code>Rechercher un établissement du supérieur</code>.</p></li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">&lt;form</span><span class="ot"> action=</span><span class="st">&quot;/modifierCandidature&quot;</span><span class="ot"> method=</span><span class="st">&quot;post&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>            <span class="kw">&lt;ol&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>                {% for candidature in session[&#39;liste_candidature&#39;] %}</span>
+<span id="cb4-4"><a href="#cb4-4"></a>                <span class="kw">&lt;li&gt;</span> </span>
+<span id="cb4-5"><a href="#cb4-5"></a>                    <span class="kw">&lt;ul&gt;</span>                  </span>
+<span id="cb4-6"><a href="#cb4-6"></a>                    <span class="kw">&lt;li&gt;</span> Nom de l&#39;établissement : {{candidature[&#39;nom&#39;]}} <span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>                    <span class="kw">&lt;li&gt;</span> Type de l&#39;établissement : {{candidature[&#39;type&#39;]}}  <span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>                    <span class="co">&lt;!---  TO DO à compléter  --&gt;</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>                <span class="kw">&lt;/ul&gt;</span></span>
+<span id="cb4-10"><a href="#cb4-10"></a>                <span class="kw">&lt;/li&gt;</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a>                {% endfor %}</span>
+<span id="cb4-12"><a href="#cb4-12"></a>                <span class="kw">&lt;li&gt;&lt;label</span><span class="ot"> for=</span><span class="st">&quot;newCandid&quot;</span><span class="kw">&gt;</span>Nouvelle candidature<span class="kw">&lt;/label&gt;</span>  <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;number&quot;</span><span class="ot"> name=</span><span class="st">&quot;newCandid&quot;</span><span class="ot"> id=</span><span class="st">&quot;newCandid&quot;</span><span class="kw">&gt;&lt;/li&gt;</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a>            <span class="kw">&lt;/ol&gt;</span>                </span>
+<span id="cb4-14"><a href="#cb4-14"></a>            <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;submit&quot;</span><span class="ot"> value=</span><span class="st">&quot;Valider&quot;</span><span class="kw">/&gt;</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a><span class="kw">&lt;/form&gt;</span></span></code></pre></div>
+<p><img src="images/candidatures.png" alt="candidature" /><br />
+</p>
+<p><img src="images/parametres-modif-candidature.png" alt="candidature" /><br />
+</p>
+<ul>
+<li>Compléter enfin les fonctions <code>requeteListeCandidatureApresSuppression</code> et <code>requeteTraitementNouvelleCandidature</code> dans le <strong>contrôleur de route</strong> <code>modifierCandidature</code> du script <code>main.py</code> afin que le clic sur le bouton <code>Envoyer</code> du formulaire dans <code>candidature.html</code> permette la mise à jour des candidatures.</li>
+</ul>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1"></a><span class="co">#controleur de route / URL</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="at">@app.route</span>(<span class="st">&#39;/modifierCandidature&#39;</span>, methods <span class="op">=</span> [<span class="st">&#39;POST&#39;</span>])</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">def</span> modifierCandidature():</span>
+<span id="cb5-4"><a href="#cb5-4"></a>    <span class="co">&quot;Controleur de la route &#39;/modifierCandidature&#39; &quot;</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a>    <span class="kw">def</span> requeteListeCandidatureApresSuppression(conn, cur, result, idEleve):</span>
+<span id="cb5-7"><a href="#cb5-7"></a>        <span class="co">&quot;&quot;&quot;Supprime les candidatures abandonnées</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a><span class="co">        et retourne la liste des identifiants des établissements demandés par l&#39;élève</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="co">        &quot;&quot;&quot;</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a>        <span class="co">#recupération de données dans le dictionnaire de session</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a>        liste_idSuperieur <span class="op">=</span> [candidature[<span class="st">&#39;idSuperieur&#39;</span>]  <span class="cf">for</span> candidature <span class="kw">in</span> session[<span class="st">&#39;liste_candidature&#39;</span>] ]</span>
+<span id="cb5-12"><a href="#cb5-12"></a>        <span class="cf">for</span> name, value <span class="kw">in</span> result.items():</span>
+<span id="cb5-13"><a href="#cb5-13"></a>            <span class="cf">if</span> name <span class="op">!=</span> <span class="st">&#39;newCandid&#39;</span> <span class="kw">and</span> value <span class="op">==</span> <span class="st">&#39;on&#39;</span>: <span class="co">#en fait les cases à cocher non cochées ne sont pas transmises voir https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/checkbox</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a>                <span class="co">##### TO DO  requete SQL à compléter pour mettre à jour liste_idSuperieur                cur.execute(&quot;DELETE FROM candidature WHERE idSuperieur = ? and idEleve = ? ;&quot;, (name, session[&#39;user&#39;][&#39;idEleve&#39;]))</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a>                requete <span class="op">=</span> <span class="st">&quot; &quot;</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a>                cur.execute(requete, (name, session[<span class="st">&#39;user&#39;</span>][<span class="st">&#39;idEleve&#39;</span>]))</span>
+<span id="cb5-17"><a href="#cb5-17"></a>                liste_idSuperieur.remove(<span class="bu">int</span>(name))</span>
+<span id="cb5-18"><a href="#cb5-18"></a>        <span class="cf">return</span> liste_idSuperieur</span>
+<span id="cb5-19"><a href="#cb5-19"></a>        </span>
+<span id="cb5-20"><a href="#cb5-20"></a>        liste_idSuperieur <span class="op">=</span> [candidature[<span class="st">&#39;idSuperieur&#39;</span>]  <span class="cf">for</span> candidature <span class="kw">in</span> session[<span class="st">&#39;liste_candidature&#39;</span>] ]</span>
+<span id="cb5-21"><a href="#cb5-21"></a>       </span>
+<span id="cb5-22"><a href="#cb5-22"></a>        <span class="cf">return</span> liste_idSuperieur</span>
+<span id="cb5-23"><a href="#cb5-23"></a>   </span>
+<span id="cb5-24"><a href="#cb5-24"></a>    <span class="kw">def</span> requeteTraitementNouvelleCandidature(conn, cur, result, liste_idSuperieur):</span>
+<span id="cb5-25"><a href="#cb5-25"></a>        <span class="co">#nouvelle candidature avec dépassement du nombre de maximal de candidatures MAX_CANDIDATURE</span></span>
+<span id="cb5-26"><a href="#cb5-26"></a>        <span class="co">#message d&#39;erreur d&#39;alerte transmis à la page retournée</span></span>
+<span id="cb5-27"><a href="#cb5-27"></a>        <span class="co"># voir https://flask.palletsprojects.com/en/1.1.x/patterns/flashing/ </span></span>
+<span id="cb5-28"><a href="#cb5-28"></a>        <span class="cf">if</span> <span class="bu">len</span>(liste_idSuperieur) <span class="op">==</span> MAX_CANDIDATURE <span class="kw">and</span> result[<span class="st">&#39;newCandid&#39;</span>]:</span>
+<span id="cb5-29"><a href="#cb5-29"></a>            flash(<span class="st">&#39;Nombre maximal de voeux atteint !&#39;</span>)  </span>
+<span id="cb5-30"><a href="#cb5-30"></a>        <span class="co">#sinon traitement de la nouvelle candidature</span></span>
+<span id="cb5-31"><a href="#cb5-31"></a>        <span class="cf">elif</span> result[<span class="st">&#39;newCandid&#39;</span>]:</span>
+<span id="cb5-32"><a href="#cb5-32"></a>            idSuperieur <span class="op">=</span> <span class="bu">int</span>(result[<span class="st">&#39;newCandid&#39;</span>]) <span class="co">#récupération de l&#39;identifiant de la formation du supérieur saisi dans le formulaire</span></span>
+<span id="cb5-33"><a href="#cb5-33"></a>            <span class="co">##### TO DO  traitement avec requete SQL   </span></span>
+<span id="cb5-34"><a href="#cb5-34"></a></span>
+<span id="cb5-35"><a href="#cb5-35"></a>    <span class="co">#analyse du formulaire</span></span>
+<span id="cb5-36"><a href="#cb5-36"></a>    <span class="cf">if</span> request.method <span class="op">==</span> <span class="st">&#39;POST&#39;</span>:  </span>
+<span id="cb5-37"><a href="#cb5-37"></a>        <span class="co">#ouverture du formulaire      </span></span>
+<span id="cb5-38"><a href="#cb5-38"></a>        result <span class="op">=</span> request.form</span>
+<span id="cb5-39"><a href="#cb5-39"></a>        <span class="co">#connexion à la BDD</span></span>
+<span id="cb5-40"><a href="#cb5-40"></a>        conn <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">&#39;monavenir.db&#39;</span>)           </span>
+<span id="cb5-41"><a href="#cb5-41"></a>        cur <span class="op">=</span> conn.cursor()</span>
+<span id="cb5-42"><a href="#cb5-42"></a>        <span class="co">#récupération de idEleve dans le dictionnaire de session</span></span>
+<span id="cb5-43"><a href="#cb5-43"></a>        idEleve <span class="op">=</span> session[<span class="st">&#39;user&#39;</span>][<span class="st">&#39;idEleve&#39;</span>]</span>
+<span id="cb5-44"><a href="#cb5-44"></a>        <span class="co">#Mise à jour de la liste des candidatures</span></span>
+<span id="cb5-45"><a href="#cb5-45"></a>        liste_idSuperieur <span class="op">=</span> requeteListeCandidatureApresSuppression(conn, cur, result, idEleve)</span>
+<span id="cb5-46"><a href="#cb5-46"></a>        requeteTraitementNouvelleCandidature(conn, cur, result, liste_idSuperieur)</span>
+<span id="cb5-47"><a href="#cb5-47"></a>        <span class="co">#enregistrement des modifications dans la BDD</span></span>
+<span id="cb5-48"><a href="#cb5-48"></a>        conn.commit()</span>
+<span id="cb5-49"><a href="#cb5-49"></a>        <span class="co">#fermeture de la base de données </span></span>
+<span id="cb5-50"><a href="#cb5-50"></a>        cur.close()</span>
+<span id="cb5-51"><a href="#cb5-51"></a>        conn.close()</span>
+<span id="cb5-52"><a href="#cb5-52"></a>    <span class="co">#renvoi du template (redirection par le nom de la fonction controleur de route)</span></span>
+<span id="cb5-53"><a href="#cb5-53"></a>    <span class="cf">return</span> redirect(url_for(<span class="st">&#39;candidature&#39;</span>)) <span class="co">#redirection vers l&#39;URL gérée par candidature </span></span></code></pre></div>
+<h1 id="atelier-élève-n2">Atelier <code>élève</code> n°2</h1>
+<blockquote>
+<p><strong>Cahier des charges :</strong></p>
+</blockquote>
+<ul>
+<li>Créer un fichier Libre-Office <code>compte-rendu.odt</code> à la racine du répertoire <code>materiel</code>.</li>
+<li>Compléter la fonction <code>requeteListeReponsesCandidatures</code> dans le <strong>contrôleur de route</strong> <code>reponses</code> de <code>main.py</code> afin qu’elle détermine la liste des candidatures de l’élève. Cette liste est nécessaire à l’affichage du formulaire de gestion des candidatures avant la phase de réponses lorsqu’on clique sur <code>Gérer les réponses à ses candidatures : afficher, abandonner.</code> dans l’interface <code>élève</code>.</li>
+</ul>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1"></a><span class="co">#controleur de route / URL</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="at">@app.route</span>(<span class="st">&#39;/reponses&#39;</span>)</span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="kw">def</span> reponses():</span>
+<span id="cb6-4"><a href="#cb6-4"></a>    <span class="co">&quot;Controleur de la route &#39;/reponses&#39; &quot;</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a></span>
+<span id="cb6-6"><a href="#cb6-6"></a>    <span class="kw">def</span> requeteListeReponsesCandidatures(conn, cur, idEleve):</span>
+<span id="cb6-7"><a href="#cb6-7"></a>        <span class="co">#renommage nécessaire pour superieur.nom en nomEtab </span></span>
+<span id="cb6-8"><a href="#cb6-8"></a>        <span class="co">#pour affichage dans reponses.html</span></span>
+<span id="cb6-9"><a href="#cb6-9"></a>        <span class="co">##### TO DO  requete SQL à compléter et résultat à retourner</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a>        requete <span class="op">=</span> <span class="st">&quot;&quot;&quot;  &quot;&quot;&quot;</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>        cur.execute(requete, (idEleve,))</span>
+<span id="cb6-12"><a href="#cb6-12"></a>        <span class="cf">return</span>  cur.fetchall()</span>
+<span id="cb6-13"><a href="#cb6-13"></a>        </span>
+<span id="cb6-14"><a href="#cb6-14"></a>    <span class="co">#connexion à la BDD</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a>    conn <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">&#39;monavenir.db&#39;</span>)  </span>
+<span id="cb6-16"><a href="#cb6-16"></a>    conn.row_factory <span class="op">=</span>  sqlite3.Row  <span class="co">#pour récupérer les lignes sous forme de dictionnaire         </span></span>
+<span id="cb6-17"><a href="#cb6-17"></a>    cur <span class="op">=</span> conn.cursor()</span>
+<span id="cb6-18"><a href="#cb6-18"></a>    idEleve <span class="op">=</span> session[<span class="st">&#39;user&#39;</span>][<span class="st">&#39;idEleve&#39;</span>] <span class="co">#on récupère l&#39;idEleve dans le cookie de session</span></span>
+<span id="cb6-19"><a href="#cb6-19"></a>    <span class="co">#requete</span></span>
+<span id="cb6-20"><a href="#cb6-20"></a>    liste_reponses <span class="op">=</span> requeteListeReponsesCandidatures(conn, cur, idEleve)</span>
+<span id="cb6-21"><a href="#cb6-21"></a>    <span class="co">#mise à jour du dictionnaire du cookie de session </span></span>
+<span id="cb6-22"><a href="#cb6-22"></a>    session[<span class="st">&#39;liste_reponses&#39;</span>] <span class="op">=</span> [<span class="bu">dict</span>(reponse) <span class="cf">for</span> reponse <span class="kw">in</span> liste_reponses]</span>
+<span id="cb6-23"><a href="#cb6-23"></a>    <span class="co">#fermeture de la base de données </span></span>
+<span id="cb6-24"><a href="#cb6-24"></a>    cur.close()</span>
+<span id="cb6-25"><a href="#cb6-25"></a>    conn.close()</span>
+<span id="cb6-26"><a href="#cb6-26"></a>    <span class="co">#renvoi du template</span></span>
+<span id="cb6-27"><a href="#cb6-27"></a>    <span class="cf">return</span> render_template(<span class="st">&quot;reponses.html&quot;</span>)</span></code></pre></div>
+<ul>
+<li><p>Préciser dans le fichier <code>compte-rendu.odt</code> les étapes successives entre le clic sur le lien <code>Gérer les réponses à ses candidatures : afficher, abandonner.</code> et l’affichage de <code>reponses.html</code> dans le navigateur.</p></li>
+<li><p>Compléter ensuite le fichier <code>reponses.html</code> du répertoire <code>templates</code> afin que le formulaire s’affiche comme ci-dessous lorsqu’on clique sur le lien <code>Gérer les réponses à ses candidatures : afficher, abandonner.</code> de l’interface élève. La première image montre le haut du formulaire avec la liste des candidatures. On supprime une candidature en la cochant. La seconde image montre le bas avec le bouton d’envoi du formulaire.</p></li>
+</ul>
+<p><img src="images/reponses.png" alt="reponses" /><br />
+</p>
+<p><img src="images/reponses2.png" alt="reponses" /><br />
+</p>
+<ul>
+<li>Compléter enfin les fonctions <code>requeteAbandonCandidature</code> et <code>requeteMajListeAppel</code> dans le <strong>contrôleur de route</strong> <code>modifierReponses</code> du script <code>main.py</code> afin que le clic sur le bouton <code>Envoyer</code> du formulaire dans <code>reponses.html</code> permette la mise à jour des réponses. Préciser dans <code>compte-rendu.odt</code> comment les valeurs <code>idSuperieur</code>, <code>idEleve</code> et <code>statut</code> sont transmises par le formulaire.</li>
+</ul>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">#controleur de route / URL</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="at">@app.route</span>(<span class="st">&#39;/modifierReponses&#39;</span>, methods <span class="op">=</span> [<span class="st">&#39;POST&#39;</span>])</span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="kw">def</span> modifierReponses():</span>
+<span id="cb7-4"><a href="#cb7-4"></a>    <span class="co">&quot;Controleur de la route &#39;/modifierReponses&#39; &quot;</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a></span>
+<span id="cb7-6"><a href="#cb7-6"></a>    <span class="kw">def</span> requeteAbandonCandidature(conn, cur, result, idSuperieur, idEleve):</span>
+<span id="cb7-7"><a href="#cb7-7"></a>        <span class="co">##### TO DO  requete SQL à exécuter pour mettre à jour l&#39;abandon de candidature</span></span>
+<span id="cb7-8"><a href="#cb7-8"></a>        requete <span class="op">=</span> <span class="st">&quot;&quot;&quot;  &quot;&quot;&quot;</span></span>
+<span id="cb7-9"><a href="#cb7-9"></a>        <span class="co">#on enregistre le changement</span></span>
+<span id="cb7-10"><a href="#cb7-10"></a>        cur.execute(requete, (<span class="bu">int</span>(idSuperieur), <span class="bu">int</span>(idEleve)))</span>
+<span id="cb7-11"><a href="#cb7-11"></a>        conn.commit()</span>
+<span id="cb7-12"><a href="#cb7-12"></a></span>
+<span id="cb7-13"><a href="#cb7-13"></a>    <span class="kw">def</span> requeteMajListeAppel(conn, cur,  idSuperieur, idEleve):</span>
+<span id="cb7-14"><a href="#cb7-14"></a>        <span class="co">##### TO DO  requete SQL à compléter  pour récupèrer les quotas de l&#39;établissement concerné</span></span>
+<span id="cb7-15"><a href="#cb7-15"></a>        requete0 <span class="op">=</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb7-16"><a href="#cb7-16"></a>        cur.execute(requete0, (idSuperieur,))</span>
+<span id="cb7-17"><a href="#cb7-17"></a>        quotas <span class="op">=</span> cur.fetchone()</span>
+<span id="cb7-18"><a href="#cb7-18"></a>        nbAdmis <span class="op">=</span> <span class="bu">int</span>(quotas[<span class="dv">0</span>])</span>
+<span id="cb7-19"><a href="#cb7-19"></a>        nbAppel <span class="op">=</span> <span class="bu">int</span>(quotas[<span class="dv">1</span>])</span>
+<span id="cb7-20"><a href="#cb7-20"></a>        <span class="co">##### TO DO requête SQL à compléter</span></span>
+<span id="cb7-21"><a href="#cb7-21"></a>        <span class="co">#on récupère l&#39;identifiant du premier de la liste d&#39;attente et on change son statut</span></span>
+<span id="cb7-22"><a href="#cb7-22"></a>        requete1 <span class="op">=</span> <span class="st">&quot;&quot;&quot; &quot;&quot;&quot;</span></span>
+<span id="cb7-23"><a href="#cb7-23"></a>        cur.execute(requete1, (idSuperieur,))</span>
+<span id="cb7-24"><a href="#cb7-24"></a>        idAttente <span class="op">=</span> cur.fetchone()[<span class="dv">0</span>]</span>
+<span id="cb7-25"><a href="#cb7-25"></a>        <span class="co">##### TO DO requête SQL à compléter</span></span>
+<span id="cb7-26"><a href="#cb7-26"></a>        <span class="co">#on met à jour le statut de la candidature de cet élève</span></span>
+<span id="cb7-27"><a href="#cb7-27"></a>        requete2 <span class="op">=</span> <span class="st">&quot;&quot;&quot;  &quot;&quot;&quot;</span></span>
+<span id="cb7-28"><a href="#cb7-28"></a>        cur.execute(requete2, (idSuperieur,idAttente))</span>
+<span id="cb7-29"><a href="#cb7-29"></a>        <span class="co">#on enregistre</span></span>
+<span id="cb7-30"><a href="#cb7-30"></a>        conn.commit()    </span>
+<span id="cb7-31"><a href="#cb7-31"></a></span>
+<span id="cb7-32"><a href="#cb7-32"></a>    <span class="co">#analyse du formulaire</span></span>
+<span id="cb7-33"><a href="#cb7-33"></a>    <span class="cf">if</span> request.method <span class="op">==</span> <span class="st">&#39;POST&#39;</span>:        </span>
+<span id="cb7-34"><a href="#cb7-34"></a>        <span class="co">#ouverture du formulaire</span></span>
+<span id="cb7-35"><a href="#cb7-35"></a>        result <span class="op">=</span> request.form</span>
+<span id="cb7-36"><a href="#cb7-36"></a>        <span class="co">#connexion à la BDD</span></span>
+<span id="cb7-37"><a href="#cb7-37"></a>        conn <span class="op">=</span> sqlite3.<span class="ex">connect</span>(<span class="st">&#39;monavenir.db&#39;</span>)           </span>
+<span id="cb7-38"><a href="#cb7-38"></a>        cur <span class="op">=</span> conn.cursor()</span>
+<span id="cb7-39"><a href="#cb7-39"></a>        <span class="co">#Modification du staut d&#39;une candidature (abandon)</span></span>
+<span id="cb7-40"><a href="#cb7-40"></a>        <span class="cf">for</span> name, value <span class="kw">in</span> result.items():</span>
+<span id="cb7-41"><a href="#cb7-41"></a>            <span class="co">#en fait les cases à cocher non cochées ne sont pas transmises voir https://developer.mozilla.org/fr/docs/Web/HTML/Element/input/checkbox</span></span>
+<span id="cb7-42"><a href="#cb7-42"></a>            <span class="co">#récupération des informations stockées dans les paramètres de chaque candidature du formulaire</span></span>
+<span id="cb7-43"><a href="#cb7-43"></a>            idSuperieur, idEleve, statut <span class="op">=</span> name.rstrip(<span class="st">&#39;)&#39;</span>).lstrip(<span class="st">&#39;(&#39;</span>).split(<span class="st">&#39;,&#39;</span>)</span>
+<span id="cb7-44"><a href="#cb7-44"></a>            <span class="co">#mise à jour de la base avec le statut &#39;abandonne&#39; pour les candidatures de cet élève</span></span>
+<span id="cb7-45"><a href="#cb7-45"></a>            requeteAbandonCandidature(conn, cur, result, idSuperieur, idEleve)</span>
+<span id="cb7-46"><a href="#cb7-46"></a>            <span class="co">#si pour cette candidature le statut de la candidature de l&#39;élève était &#39;admis&#39;</span></span>
+<span id="cb7-47"><a href="#cb7-47"></a>            <span class="cf">if</span> statut <span class="op">==</span> <span class="st">&#39;admis&#39;</span>:</span>
+<span id="cb7-48"><a href="#cb7-48"></a>                requeteMajListeAppel(conn, cur,  idSuperieur, idEleve)</span>
+<span id="cb7-49"><a href="#cb7-49"></a></span>
+<span id="cb7-50"><a href="#cb7-50"></a>        <span class="co">#fermeture de la BDD</span></span>
+<span id="cb7-51"><a href="#cb7-51"></a>        cur.close()</span>
+<span id="cb7-52"><a href="#cb7-52"></a>        conn.close()</span>
+<span id="cb7-53"><a href="#cb7-53"></a>        <span class="co">#renvoi du template</span></span>
+<span id="cb7-54"><a href="#cb7-54"></a>        <span class="cf">return</span> redirect(url_for(<span class="st">&#39;reponses&#39;</span>)) <span class="co">#redirection vers l&#39;URL gérée par reponses</span></span></code></pre></div>
+</body>
+</html>

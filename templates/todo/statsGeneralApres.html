@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>stats générales apres</title>
+		<!-- <link rel ="stylesheet" href ="mon.css"/>  -->
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface élève </h1>
+   
+
+        <section>
+            <h2>Statistiques générales après la phase de réponses,  admin {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+    
+         
+            <form action="/resultatStatsGeneralApres" method="post">
+            
+            <ul>
+
+                <li><label for="listeRefus"> Liste des  candidats dont tous les voeux ont été refusés </label>
+                    <input type="checkbox" id="listeRefus" name="listeRefus"  unchecked>
+                </li>
+
+
+                <li><label for="moyAdmis">Nombre moyen de réponses admis par candidat </label>
+                    <input type="checkbox" id="moyAdmis" name="moyAdmis"  unchecked>
+                </li>
+
+
+                <li><label for="refusEtab">Nombre de voeux refusés par établissement du supérieur (par ordre croissant)</label>
+                    <input type="checkbox" id="refusEtab" name="refusEtab"  unchecked>
+                </li>
+              
+               
+            </ul>
+                
+            <input type="submit" value="Valider"/>
+        </form>
+            </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

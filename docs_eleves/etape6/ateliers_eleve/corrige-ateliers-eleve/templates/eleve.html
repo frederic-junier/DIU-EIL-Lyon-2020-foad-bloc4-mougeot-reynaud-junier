@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+
+<head>
+  <title>Elève</title>
+  <meta charset="utf-8">    
+</head>
+  
+<body>
+
+   
+   <h1> <em>Mon avenir</em> interface élève </h1>
+   
+
+   <p>Bienvenue {{session['user']['prenom']}} {{session['user']['nom']}}  sur la plateforme <em>Mon avenir</em>.  </p>
+
+   
+   <h2>Vos options </h2>
+
+    <ul>
+      <li> <a href="/consulterCompte">Consulter/Modifier les paramètres de son compte.</a> </li>
+      <li> <a href="/rechercheFormation">Rechercher un établissement du supérieur.</a></li>
+      <li> <a href="/candidature">Gérer ses  candidatures : afficher, supprimer, ajouter.</a></li>
+      <li><a href="/reponses">Gérer  les réponses à ses candidatures : afficher, abandonner.</a></li>
+    </ul>
+
+    <footer>
+      <h2>Pied de page</h2>
+      <ul>
+          <li> <a href="/interface">Retour à l'interface du profil</a></li>
+          <li><a href="/">Déconnexion</a></li>
+      </ul>   
+    </footer>
+  
+</body>
+</html> 

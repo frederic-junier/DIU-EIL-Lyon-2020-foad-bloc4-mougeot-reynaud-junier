@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>résultat liste d'appel</title>
+		 <link rel ="stylesheet" type="text/css" href ="{{ url_for('static', filename='stylesheets/style_monavenir.css') }}"/> 
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface établissement </h1>
+   
+        
+   
+
+        <section>
+            <h2>Liste d'appel : </h2>
+            <ol>
+            {% for candidat in liste_appel %}
+            <li> 
+                <ul>                  
+                <li> Nom du candidat : {{candidat['nomCandidat']}} </li>
+                <li> Prénom du candidat : {{candidat['prenomCandidat']}}  </li>
+                <li> Lycée du candidat : {{candidat['nomLycee']}}  </li>
+                <li> Moyenne du candidat : {{candidat['moyenne']}}  </li>
+                <li> Statut de la réponse : {{candidat['statut']}}  </li>
+            </ul>
+            </li>
+            {% endfor %}
+        </ol>
+
+        </section>
+
+     
+            </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>             
+                <li><a href="/deconnexion">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+

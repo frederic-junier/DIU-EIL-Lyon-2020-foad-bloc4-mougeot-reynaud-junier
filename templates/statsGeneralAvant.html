@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>stats générales avant</title>
+		<!-- <link rel ="stylesheet" href ="mon.css"/>  -->
+	</head>
+	
+	<body>
+
+        <h1> <em>Mon avenir</em> interface élève </h1>
+   
+
+        <section>
+            <h2>Statistiques générales avant la phase de réponses,  admin {{session['user']['prenom']}} {{session['user']['nom']}}.  </h2>
+    
+         
+            <form action="/resultatStatsGeneralAvant" method="post">
+            
+            <ul>
+                <li><label for="moyVoeux">Nombre moyen de voeux par candidat </label>
+                    <input type="checkbox" id="moyVoeux" name="moyVoeux"  unchecked>
+                </li>
+
+
+                <li><label for="totalEtab">Nombre total de candidatures par établissement (par ordre croissant)</label>
+                    <input type="checkbox" id="totalEtab" name="totalEtab"  unchecked>
+                </li>
+                <li><label for="moyEtab">Moyennes des candidats par établissement demandé (par ordre décroissant)</label>
+                    <input type="checkbox" id="moyEtab" name="moyEtab"  unchecked>
+                </li>
+
+                
+
+                <li><label for="sousAppel">Listes des établissements ayant moins de candidatures que leur quota d'appel </label>
+                    <input type="checkbox" id="sousAppel" name="sousAppel"  unchecked>
+                    </li>
+                
+                <li><label for="maxCandid">Liste des établissements les plus demandés </label>
+                    <input type="checkbox" id="maxCandid" name="maxCandid"  unchecked>
+                </li>          
+               
+            </ul>
+                
+            <input type="submit" value="Valider"/>
+        </form>
+            </section>
+    
+		
+        <footer>
+            <h2>Pied de page</h2>
+            <ul>
+                <li> <a href="/interface">Retour à l'interface du profil</a></li>
+                <li><a href="/">Déconnexion</a></li>
+            </ul>   
+          </footer>
+
+    </body>
+</html>
+
