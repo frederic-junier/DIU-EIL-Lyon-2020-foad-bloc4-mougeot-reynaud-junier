@@ -13,8 +13,8 @@
 * __Objectif :__ 
     * créer un mini Parcoursup application web destinée à recueillir et gérer les vœux d'affectation de lycéens du Rhône  pour un établissement de l'enseignement supérieur dans le Rhône.
 * __Liens :__
-    *   [tous les fichiers nécessaires pour l'application](https://gitlab.com/frederic-junier/foad-bloc4-mougeot-reynaud-junier/-/tree/master/)        
-    *   [Le document de synthèse de l'activité MonAvenir.pdf](docs_eleves/)
+    *   [Le document de synthèse de l'activité MonAvenir.pdf](docs_eleves/MonAvenir16.pdf)
+    *   [tous les fichiers nécessaires pour l'application](https://gitlab.com/frederic-junier/foad-bloc4-mougeot-reynaud-junier/-/tree/master/)    
     *   [Les documents élèves pour l'étape 4](docs_eleves/etape4)
     *   [Les documents élèves pour l'étape 6](docs_eleves/etape6)
 
