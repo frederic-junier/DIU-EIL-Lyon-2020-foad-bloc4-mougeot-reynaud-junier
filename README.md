@@ -14,7 +14,7 @@ Lien vers la version mini-site Web générée avec Github Pages : [https://frede
 * __Objectif :__ 
     * Créer un mini Parcoursup application web destinée à recueillir et gérer les vœux d'affectation de lycéens du Rhône  pour un établissement de l'enseignement supérieur dans le Rhône.
 * __Liens :__
-    *   [Le document de synthèse de l'activité MonAvenir.pdf](docs_eleves/MonAvenir16.pdf)
+    *   [Le document de synthèse de l'activité MonAvenir.pdf](docs_eleves/MonAvenir17.pdf)
     *   [Tous les fichiers nécessaires pour l'application](https://github.com/frederic-junier/DIU-EIL-Lyon-2020-foad-bloc4-mougeot-reynaud-junier)    
     *   [Les documents élèves pour l'étape 4](docs_eleves/etape4)
     *   [Les documents élèves pour l'étape 6](docs_eleves/etape6)
