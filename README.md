@@ -1,5 +1,6 @@
 # foad-bloc4-mougeot-reynaud-junier
 
+Lien vers la version mini-site Web générée avec Github Pages : [https://frederic-junier.github.io/-foad-bloc4-mougeot-reynaud-junier/](https://frederic-junier.github.io/-foad-bloc4-mougeot-reynaud-junier/)
 
 ## De quoi s'agit-il ?
 
@@ -11,7 +12,7 @@
 ## Descriptif
 
 * __Objectif :__ 
-    * créer un mini Parcoursup application web destinée à recueillir et gérer les vœux d'affectation de lycéens du Rhône  pour un établissement de l'enseignement supérieur dans le Rhône.
+    * Créer un mini Parcoursup application web destinée à recueillir et gérer les vœux d'affectation de lycéens du Rhône  pour un établissement de l'enseignement supérieur dans le Rhône.
 * __Liens :__
     *   [Le document de synthèse de l'activité MonAvenir.pdf](docs_eleves/MonAvenir16.pdf)
     *   [tous les fichiers nécessaires pour l'application](https://github.com/frederic-junier/DIU-EIL-Lyon-2020-foad-bloc4-mougeot-reynaud-junier)    
